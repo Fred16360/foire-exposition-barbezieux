@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+{% block head_title %}{{ head_title }}{% endblock %}
+{% load static %}
+
+{% block slider %}
+
+<a href="{% url 'index' %}">
+<img src="{% static 'images/logo.png' %}" class="logo">
+</a>
+<img src="{% static 'images/2022/animations_entete.jpg' %}">
+
+{% endblock slider %}
+
+
+{% block content %}
+
+<div class="container text_content">
+    <div class="col70" style="margin-top: 3vh; margin-bottom:4vh">
+        <div class="titre_anim" style="text-align:center">Les concours de Pineau des Charentes<br>et des eaux de vie nouvelles de la foire
+            expo</div>
+        <div class="p" style="margin-top:5vh">
+            Les médailles attribuées lors des ces concours sont de véritables reconnaissances de qualité des produits
+            présentés. Les jurys qui attribuent ces récompenses sont composés de professionnels qui jugent avec un
+            sérieux irréprochable chaque échantillon en compétition
+        </div>
+        <div class="soulgras">Les dégustateurs :</div>
+        <div class="p">
+            Habilités et reconnus par la profession, ils s'entraînent régulièrement aux méthodes de dégustation. Comme
+            dans le sport, seul l'entraînement régulier permet d'acquérir les qualités indispensables à cette activité.
+        </div>
+        <div class="soulgras">Les échantillons présentés :</div>
+        <div class="p">
+            <ul><li>
+            En Pineau des Charentes, ils sont issus de lots obligatoirement élaborés par des viticulteurs, ils sont déjà
+            agrées avant leur mise en marché, au vu d'un cahier des charges extrêmement rigoureux, accompagnés d'une
+            analyse réalisée en laboratoire d'oenologie et d'un agrément accordé par une commission de dégustateurs
+            professionnels. Ils doivent être disponibles à la vente et en quantité suffisante.</li>
+            <li>
+            Pour l'eau de vie nouvelle, les échantillons sont issus de la distillation de l'hiver précédent le concours.
+            Le Jury n'est pas le même que pour le Pineau des Charentes et est composé de "nez" spécialistes du "cognac"
+            </li></ul>
+        </div>
+        <div class="p">
+        Ces jury se réunissent à huis-clos le vendredi matin de l'ouverture de la foire exposition et dégustent des
+        échantillons rendus anonymes et préparés par les organismes de tutelle des appellations.<br>
+        Les résultats et les appréciations sont collectées par les mêmes organismes de tutelle et remis aux
+        organisateurs de la foire après délibération et classement, et avant diffusion auprès des lauréats puis de la
+        presse dans un deuxième temps.
+        </div>
+        <div class="p">
+        Le sérieux du concours du Pineau des Charentes organisé à l'identique des concours nationaux et internationaux
+        garanti aux acheteurs des produits primés, l'assurance d'acquérir l'excellence.
+        </div>
+        <div class="p">
+        Pour les eaux de vie nouvelles les classements, en plus de la satisfaction d'être primé, permettent aux
+        bouilleurs de crus ayant présenté leurs échantillons, d'améliorer grâce aux commentaires et appréciations du
+        jury, leur savoir faire dans le domaine de la distillation, point de départ de tout produit de qualité tant en
+        Cognac qu'en Pineau des Charentes. Un compte rendu est adressé personnellement à chaque compétiteur avant la
+        reprise de la période de distillation.
+        </div>
+    </div>
+</div>
+
+{% endblock content %}

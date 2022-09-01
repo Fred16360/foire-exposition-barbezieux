@@ -1,0 +1,295 @@
+@media (max-width:479px) {
+    .dp-479max {
+        display: flex;
+    }
+    .dp-480-959 {
+        display: flex;
+    }
+    .dp-1281-1600 {
+        display: none;
+    }
+    .dp-1601-1920 {
+        display: none;
+    }
+    .dp-1921-2560 {
+        display: none;
+    }
+    #techniques figure img,
+    #actualites figure img,
+    #realisations figure img {
+        max-width: 300px;
+    }
+    #techniques figure figcaption,
+    #realisation figure figcaption {
+        bottom: 15vw;
+        font-size: 6.4vw;
+        padding: 3.1vw;
+    }
+    #techniques figure {
+        margin-bottom: -10vw;
+    }
+    #realisations figure figcaption,
+    #actualites figure figcaption {
+        font-size: 3.5vw;
+        max-width: 300px;
+    }
+    .date {
+        font-family: century gothic;
+        margin-left: 1vw;
+        margin-top: 0.5vw;
+        font-size: 2.5vw;
+        font-weight: normal;
+    }
+    .fleche_center img {
+        width: 40px;
+        height: 30px;
+        margin-top: 2px;
+    }
+    .col_menu {
+        display: none;
+    }
+    .logo {
+        width: 50%;
+    }
+    .bouton_gris {
+        font-size: 4.3vw;
+        height: 6.5vw;
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 1vw;
+        margin-top: 1vw;
+    }
+    .bouton_vert {
+        font-size: 4vw;
+        height: 7.5vw;
+        width: 50%;
+        border-radius: 13vw;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    #realisations .bouton_gris {
+        margin-bottom: 5px;
+    }
+    .questions {
+        font-size: 4.5vw;
+    }
+    .contact {
+        font-size: 3vw;
+    }
+    .titre {
+        display: none;
+    }
+    .confiance {
+        width: 100%;
+    }
+    .col_00 {
+        display: none;
+    }
+    .col_01,
+    .col_02,
+    .col_03,
+    .col_04 {
+        width: 50%;
+        margin-bottom: 3vw;
+    }
+    .bas_de_page {
+        flex-wrap: wrap;
+        text-align: left;
+    }
+    .titre_bas_page,
+    .titre_bas_page a {
+        font-size: 3vw;
+        margin-bottom: 0;
+    }
+    .texte_bas_page,
+    .texte_bas_page a {
+        font-size: 2.5vw;
+        font-weight: normal;
+    }
+    .titre_actualites {
+        font-size: 4.5vw;
+    }
+    .col_01 p,
+    .col_02 p,
+    .col_03 p,
+    .col_04 p {
+        line-height: 5vw;
+    }
+    .col_01 img {
+        width: 70%;
+    }
+    .accueil_vedette {
+        flex-wrap: wrap;
+    }
+    .exposant, .visiteur, .theme {
+        height: 200px;
+        width: 100%;
+    }
+    .visiteur {
+        margin-top: 5vh;
+    }
+    .expo_visit {
+        display: block;
+    }
+    .plus_infos {
+        width: 20vw;
+        font-size: 3vw;
+    }
+    .billeterie {
+        width: 50vw;
+        font-size: 5vw;
+    }
+    h3 {
+        font-size: 3.5vw;
+    }
+    .differents_espaces {
+        font-size: 0.8rem;
+        margin: 2vh 1vw 2vh 1vw;
+        margin-top: 2vh;
+        height: 11vh;
+        width: 22%;
+        padding-top: 2vh;
+    }
+    .espace {
+        font-size: 0.8rem;
+    }
+    .pub_col01, .pub_col05 {
+        width: 25%;
+        margin-top: 0px;
+    }
+    .pub_col02, .pub_col04 {
+        width: 43%;
+        margin-top: 0px;
+    }
+    .pub_col03 {
+        width: 78%;
+        margin-top: 0px;
+    }
+    .pub_col {
+        flex-direction: column;
+        align-items: center;
+    }
+    .cont_pub_col {
+        align-items: center;
+        width: 100%;
+    }
+    .col_02, .col_03, .col_04 {
+        display: none;
+    }
+    .icone_menu_txt {
+        font-size: 0.55em;
+    }
+    .p {
+        font-size: 0.5em;
+    }
+    .soulgras {
+        font-size: 0.5em;
+    }
+    .col70, .col33 {
+        width: 90%;
+    }
+    .container70 {
+        width: 90%;
+    }
+    .titre_anim {
+        font-size: 4vw;
+    }
+    .titre_tel, .titre_tel_small {
+        display:flex;
+        font-size: 1.3em;
+        color: #68533C;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        justify-content: center;
+        font-weight: bold;
+    }
+    .titre_tel_small {
+        font-size: 0.8em;
+    }
+    .titre_ordi {
+        display: none;
+    }
+    .anim, .anim_hr {
+        font-size: 0.6em;
+    }
+    .edition_row70 {
+        justify-content: space-around;
+        width:90%;
+        flex-wrap: wrap;
+    }
+    .edition_img {
+        width: 100%;
+    }
+    .espace_img {
+        width: 100%;
+        margin-top: 2vh;
+    }
+    .text_anim {
+        font-size: 0.5em;
+    }
+    .titre_page {
+    font-size: 0.8em;
+    }
+    .espace_pub {
+        width: 100%;
+        border-top: 0px solid #68533c;
+        border-bottom: 0px solid #68533c;
+        border-left: 1px solid #68533c;
+        border-right: 1px solid #68533c;
+        height: auto;
+    }
+    .espace_pub_bc {
+        width: 100%;
+        border: 1px solid #68533c;
+        height: auto;
+    }
+    .pub_row70 {
+        flex-direction: column;
+        width: 90%;
+    }
+    .bt {
+        border-top: 0px solid #68533C;
+    }
+    .bb {
+        border-bottom: 0px solid #68533C;
+    }
+    .bl {
+        border-left: 1px solid #68533C;
+    }
+    .br {
+        border-right: 1px solid #68533C;
+    }
+    .w8, .w10, .w14, .w15, .w25, .w28, .w30, .w40, .w75 {
+        width: 100%;
+    }
+    .reseaux_sociaux {
+        display: flex;
+    }
+    .reseaux_sociaux_img {
+        width: 30%;
+    }
+    .foire_video {
+        width: 400;
+    }
+    .titre-page-ml {
+        font-size: 2em;
+    }
+    .arnaque {
+        width: 100%;
+        margin-top: 5vh;
+    }
+    .container_video {
+        display: flex; 
+        flex-wrap: wrap; 
+        width: 95%;
+    }
+    .menus {
+        width: 350px;
+    }
+}
+
+@media(max-width:959px) {
+    .dp-960-1280 {
+        display: none;
+    }
+}

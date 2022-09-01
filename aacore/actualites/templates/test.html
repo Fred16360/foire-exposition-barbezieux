@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% block head_title %}{{ head_title }}{% endblock %}
+{% load static %}
+
+
+
+
+{% block slider %}
+
+<a href="{% url 'index' %}">
+    <img src="{% static 'images/logo.png' %}" class="logo">
+</a>
+<img src="{% static 'images/2022/partenaires_entete.jpg' %}">
+
+{% endblock slider %}
+
+
+{% block content %}
+<style>
+    .img_test {
+        position: absolute;
+        width: 350px;
+    }
+    
+    
+</style>
+
+
+
+<div class="container" style="width:70%; height:200px">
+    <div style="width:25%">
+        <img class="img_test" src="{% static 'images/pub/col03/bricomarche.jpg' %}">
+        <img class="img_test" src="{% static 'images/pub/col03/pixie_color.jpg' %}">
+        
+    </div>
+
+
+</div>
+
+<script>
+
+
+</script>
+
+
+
+{% endblock content %}

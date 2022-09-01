@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+{% block head_title %}{{ head_title }}{% endblock %}
+{% load static %}
+
+
+{% block slider %}
+
+<a href="{% url 'index' %}">
+    <img src="{% static 'images/logo.png' %}" class="logo">
+</a>
+<img src="{% static 'images/2022/infos_entete.jpg' %}">
+
+{% endblock slider %}
+
+
+{% block content %}
+
+<div class="container" style="flex-wrap:wrap; margin-top:5vh; margin-bottom:5vh">
+
+    <div class="container" style="margin-top:5vh; margin-bottom:5vh;">
+        <div class="titre_ordi">
+        <h1>- - - - - - - - - - - - - - - - - - - - - - - &nbsp;ESPACE GASTRONOMIE&nbsp; - - - - - - - - - - -
+            - - - - - - - - - - - -</h1>
+        </div>
+        <div class="titre_tel_small">- - - &nbsp;ESPACE GASTRONOMIE&nbsp; - - -</div>
+    </div>
+
+    <div class="col" style="width:70%; margin: 0 0 5vh 0">
+        <h3 style="font-weight:bold">OUVERT TOUS LES JOURS</h3>
+        <h3>Vendredi, Samedi, Dimanche</h3>
+        <h3>de 09h30 à 00h00</h3>
+    </div>
+
+    <div class="col70" style="text-align:center; margin: 0 0 5vh 0">
+        <h3>Un espace de la foire est spécialement dédié à la gastronomie,</h3>
+        <h3>une soixantaine d'artisans et producteurs vous y accueillent pour vous restaurer.</h3>
+        <h3>Des tables et des chaises sont mises à votre disposition.</h3>
+        <h3>Vous pouvez composer votre menu selon vos goûts auprès des différents exposants</h3>
+        <h3>et vous installer tranquillement.</h3>
+    </div>
+
+    <div class="col" style="margin-top:5vh">
+        <div >
+        <h3>(arrêt de la vente de boissons alcoolisées à 23h30)</h3></div>
+        <div class="container70">
+        <img style="width:33%" src="{% static 'images/2022/gastronomie01.jpg' %}">
+        <img style="width:33%; margin:0 1vh 0 1vh;" src="{% static 'images/2022/gastronomie02.jpg' %}">
+        <img style="width:33%" src="{% static 'images/2022/gastronomie03.jpg' %}">
+        </div>
+    </div>
+</div>
+
+{% endblock content %}

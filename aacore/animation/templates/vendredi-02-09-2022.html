@@ -1,0 +1,165 @@
+{% extends 'base.html' %}
+{% block head_title %}{{ head_title }}{% endblock %}
+{% load static %}
+
+
+{% block slider %}
+
+<a href="{% url 'index' %}">
+    <img src="{% static 'images/logo.png' %}" class="logo">
+</a>
+<img src="{% static 'images/2022/animations_entete.jpg' %}">
+
+{% endblock slider %}
+
+
+{% block content %}
+
+<div class="container" style="flex-wrap:wrap; margin-bottom:5vh">
+    <div class="container" style="margin-top:5vh; margin-bottom: 5vh">
+        <div class="titre_ordi">
+            <h1>- - - - - - - - - - - - - - - - - - - - - - - - &nbsp;VENDREDI 02-09-2022&nbsp; - - - - - - - - - - -
+                - - - - - - - - - - - - -</h1>
+        </div>
+        <div class="titre_tel_small">- - - &nbsp;VENDREDI 02-09-2022&nbsp; - - -</div>
+    </div>
+
+<!--  <div class="container70 text_anim">Dans ce tableau figure seulement les animations validées par le comité de la foire exposition. Il sera complété au fur et à mesure des nouvelles validations.
+    </div>-->  
+
+    <div class="container70 bold">
+        <div class="anim_hr" style="width:20%">HEURE</div>
+        <div class="anim" style="width:80%">ANIMATIONS</div>
+    </div>
+    <div class="container70">
+        <div class="anim_hr" style="width:20%">09 h 30</div>
+        <div class="anim" style="width:80%">OUVERTURE DE LA FOIRE et du SALON DU CHEVAL</div>
+    </div>
+    <div class="container70">
+        <div class="anim_hr" style="width:20%">10 h 00</div>
+        <div class="anim" style="width:80%">Concours Pineau et eaux de vie nouvelles</div>
+    </div>
+    <div class="container70">
+        <div class="anim_hr" style="width:20%">10 h 30</div>
+        <div class="anim" style="width:80%">Démonstration maréchalerie</div>
+    </div>
+    <div class="container70">
+        <div class="anim_hr" style="width:20%">11 h 00</div>
+        <div class="anim" style="width:80%">
+            <div class="col">
+                <div>Dressage haute école</div>
+                <div style="font-weight:bold">Hippicure & Compagnie</div>
+            </div>
+        </div>
+    </div>
+    <div class="container70">
+        <div class="anim_hr" style="width:20%">11 h 30</div>
+        <div class="anim" style="width:80%">Présentation races asines</div>
+    </div>
+    <div class="container70">
+        <div class="anim_hr" style="width:20%">14 h 30</div>
+        <div class="anim" style="width:80%">
+            <div class="col">
+                <div>Démonstration maréchalerie</div>
+                <div style="font-weight:bold">Campus des métiers Barbezieux</div>
+            </div>
+        </div>
+    </div>
+    <div class="container70">
+        <div class="anim_hr" style="width:20%">15 h 00</div>
+        <div class="anim" style="width:80%">
+            <div class="col">
+                <div>Voltige</div>
+                <div style="font-weight:bold">Hippicure & Compagnie</div>
+            </div>
+        </div>
+    </div>
+    <div class="container70">
+        <div class="anim_hr" style="width:20%">15 h 30</div>
+        <div class="anim" style="width:80%">
+            <div class="col">
+                <div>Démonstration travaux agricoles chevaux de trait</div>
+                <div style="font-weight:bold">Les traits de Jean Vérat</div>
+            </div>
+        </div>
+    </div>
+    <div class="container70">
+        <div class="anim_hr" style="width:20%">15 h 30</div>
+        <div class="anim" style="width:80%">
+            <div class="col">
+                <div>INAUGURATION OFFICIELLE DE LA FOIRE</div>
+                <div>Avec les participations</div>
+                <div style="font-weight:bold">Hippicure & Compagnie - Centre équestre - Corps et Anes</div>
+            </div>
+        </div>
+    </div>
+    <div class="container70">
+        <div class="anim_hr" style="width:20%">15 h 30</div>
+        <div class="anim" style="width:80%">Concours de stands</div>
+    </div>
+    <div class="container70">
+        <div class="anim_hr" style="width:20%">16 h 00</div>
+        <div class="anim" style="width:80%">
+            <div class="col">
+                <div>Poste Hongroise</div>
+                <div style="font-weight:bold">Hippicure & Compagnie</div>
+            </div>
+        </div>
+    </div>
+    <div class="container70">
+        <div class="anim_hr" style="width:20%">16 h 30</div>
+        <div class="anim" style="width:80%">
+            <div class="col">
+                <div>Médiation - Maniabilité</div>
+                <div style="font-weight:bold">Corps et Anes</div>
+            </div>
+        </div>
+    </div>
+    <div class="container70">
+        <div class="anim_hr" style="width:20%">17 h 00</div>
+        <div class="anim" style="width:80%">
+            <div class="col">
+                <div>Démonstration Poney Games</div>
+                <div style="font-weight:bold">Centre équestre Barbezieux</div>
+            </div>
+        </div>
+    </div>
+    <div class="container70">
+        <div class="anim_hr" style="width:20%">17 h 00</div>
+        <div class="anim" style="width:80%">DISCOURS OFFICIELS</div>
+    </div>
+    <div class="container70">
+        <div class="anim_hr" style="width:20%">17 h 30</div>
+        <div class="anim" style="width:80%">Apéritif d'honneur</div>
+    </div>
+    <div class="container70">
+        <div class="anim_hr" style="width:20%">18 h 00</div>
+        <div class="anim" style="width:80%">
+            <img style="width:20%; margin-right:20px" src="{% static 'images/2022/chimene_badi_anim.jpg' %}">
+            <video width=150 controls poster="{% static 'videos/2022/chimene_badi.jpg' %}">
+                <source src="{% static 'videos/2022/chimene_badi.mp4'%}" type="video/mp4">
+            </video>
+        </div>
+    </div>
+    <div class="container70">
+        <div class="anim_hr" style="width:20%">20 h 30</div>
+        <div class="anim" style="width:80%">FERMETURE DE LA FOIRE</div>
+    </div>
+    <div class="container70">
+        <div class="anim_hr" style="width:20%">21 h 00</div>
+        <div class="anim" style="width:80%">
+            <div class="col">
+            <div>Podium GASTRONOMIE</div>
+            <div>Animation et tour de chant de</div>
+            <div style="font-weight:bold">Thibault DUPONT</div>
+            </div>
+        </div>
+    </div>
+    <div class="container70 bb">
+        <div class="anim_hr" style="width:20%">24 h 00</div>
+        <div class="anim" style="width:80%">FERMETURE ESPACE GASTRONOMIE</div>
+    </div>
+
+</div>
+
+{% endblock content %}

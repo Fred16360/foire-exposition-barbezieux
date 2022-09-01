@@ -1,0 +1,80 @@
+@media(min-width:960px) and (max-width:1280px) {
+    .dp-479max {
+        display: none;
+    }
+    .dp-480-959 {
+        display: none;
+    }
+    .dp-960-1280 {
+        display: flex;
+    }
+    .dp-1281-1600 {
+        display: flex;
+    }
+    .dp-1601-1920 {
+        display: none;
+    }
+    .dp-1921-2560 {
+        display: none;
+    }
+    .content {
+        margin-top: 3vh;
+        margin-bottom: 3vh;
+    }
+    .logo {
+        width: 25%;
+    }
+    .titre {
+        font-size: 1.2vw;
+    }
+    .questions {
+        font-size: 2.5vw;
+        margin-top: 1.5vw;
+    }
+    .contact {
+        font-size: 1.8vw;
+    }
+    .fleche_center img {
+        width: 80px;
+        height: 60px;
+        margin-top: 0px;
+    }
+    #techniques figure img,
+    #actualites figure img,
+    #realisations figure img {
+        max-width: 400px;
+    }
+    #techniques figure figcaption {
+        bottom: 5.6vw;
+        font-size: 2.6vw;
+        padding: 1vw 0;
+    }
+    #techniques figure {
+        margin-bottom: -3vw;
+    }
+    #actualites figure figcaption,
+    #realisations figure figcaption {
+        font-size: 1.5vw;
+        max-width: 400px;
+    }
+    .actu {
+        max-width: 400px;
+        margin-left: 1vw;
+        margin-right: 1vw;
+    }
+    .col_01 img {
+        width: 50%;
+    }
+    .col_01,
+    .col_02,
+    .col_03,
+    .col_04 {
+        width: 25%;
+        margin-bottom: 3vw;
+    }
+    .texte_bas_page,
+    .texte_bas_page a {
+        font-size: 1.2vw;
+        font-weight: normal;
+    }
+}

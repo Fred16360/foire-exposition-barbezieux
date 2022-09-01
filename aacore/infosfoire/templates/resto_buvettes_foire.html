@@ -1,0 +1,169 @@
+{% extends 'base.html' %}
+{% block head_title %}{{ head_title }}{% endblock %}
+{% load static %}
+
+
+{% block slider %}
+
+<a href="{% url 'index' %}">
+    <img src="{% static 'images/logo.png' %}" class="logo">
+</a>
+<img src="{% static 'images/2022/infos_entete.jpg' %}">
+
+{% endblock slider %}
+
+
+{% block content %}
+
+<div class="container" style="flex-wrap:wrap; margin-top:5vh; margin-bottom:5vh">
+
+    <div class="container" style="margin-top:5vh; margin-bottom:5vh;">
+        <div class="titre_ordi">
+            <h1>- - - - - - - - - - - - - - - - - - - - - - - - &nbsp;RESTO DE LA FOIRE&nbsp; - - - - - - - - - - - -
+                - - - - - - - - - - - -</h1>
+        </div>
+        <div class="titre_tel_small">- - - &nbsp;RESTO DE LA FOIRE&nbsp; - - -</div>
+    </div>
+
+    <div class="col">
+        <h2 style="margin-bottom:5vh">HORAIRES du RESTO<br>(Salles des Alambics)</h2>
+        <h3>Vendredi/Samedi et Dimanche midi de 12h00 à 14h30</h3>
+        <h3>Vendredi/Samedi et Dimanche soir de 19h00 à 23h00</h3>
+        <h3 style="margin-top:3vh">Le menu sera affiché à l'entrée de la salle</h3>
+        <h3 style="margin-top:3vh">Prix des repas : 18 €</h3>
+        <h3 style="margin-top:3vh">L'équipe de Lucie vous recevra salle des Alambics</h3>
+        <h3>comme les années précédentes</h3>
+        <h3 style="margin-top:3vh; font-weight:bold">Le restaurant de la Foire est ouvert à tous sans réservation</h3>
+        <h3>Possibilité d'acheter les tickets repas pendant la journée au secrétariat</h3>
+    </div>
+
+    <div class="container" style="margin-top:5vh; margin-bottom:5vh;">
+        <div class="titre_ordi">
+            <h1>- - - - - - - - - - - - - - - - - - - - - - - - &nbsp;MENUS A CONSULTER&nbsp; - - - - - - - -
+                - - - - - - - - - - - - - - - -</h1>
+        </div>
+        <div class="titre_tel_small">- - - &nbsp;MENUS A CONSULTER&nbsp; - - -</div>
+    </div>
+
+
+    <!-- <div class="container70">
+        <div style="width:15%; display:flex; justify-content:center">
+            <a href="#" onclick="document.getElementById('no_menu').style.display='block'">
+                <img class="icone_menu" src="{% static 'images/2022/icone_menu.png' %}">
+            </a>
+        </div>
+        <div style="width:15%; display:flex; justify-content:center">
+            <a href="#" onclick="document.getElementById('no_menu').style.display='block'">
+                <img class="icone_menu" src="{% static 'images/2022/icone_menu.png' %}">
+            </a>
+        </div>
+        <div style="width:15%; display:flex; justify-content:center">
+            <a href="#" onclick="document.getElementById('no_menu').style.display='block'">
+                <img class="icone_menu" src="{% static 'images/2022/icone_menu.png' %}">
+            </a>
+        </div>
+        <div style="width:15%; display:flex; justify-content:center">
+            <a href="#" onclick="document.getElementById('no_menu').style.display='block'">
+                <img class="icone_menu" src="{% static 'images/2022/icone_menu.png' %}">
+            </a>
+        </div>
+        <div style="width:15%; display:flex; justify-content:center">
+            <a href="#" onclick="document.getElementById('no_menu').style.display='block'">
+                <img class="icone_menu" src="{% static 'images/2022/icone_menu.png' %}">
+            </a>
+        </div>
+        <div style="width:15%; display:flex; justify-content:center">
+            <a href="#" onclick="document.getElementById('no_menu').style.display='block'">
+                <img class="icone_menu" src="{% static 'images/2022/icone_menu.png' %}">
+            </a>
+        </div>
+    </div> -->
+
+    <div class="container70">
+        <div style="width:15%; display:flex; justify-content:center">
+            <a href="{% url 'jeudi_midi' %}">
+                <img class="icone_menu" src="{% static 'images/2022/icone_menu.png' %}">
+            </a>
+        </div>
+        <div style="width:15%; display:flex; justify-content:center">
+            <a href="{% url 'vendredi_midi' %}">
+                <img class="icone_menu" src="{% static 'images/2022/icone_menu.png' %}">
+            </a>
+        </div>
+        <div style="width:15%; display:flex; justify-content:center">
+            <a href="{% url 'vendredi_soir' %}">
+                <img class="icone_menu" src="{% static 'images/2022/icone_menu.png' %}">
+            </a>
+        </div>
+        <div style="width:15%; display:flex; justify-content:center">
+            <a href="{% url 'samedi_midi' %}">
+                <img class="icone_menu" src="{% static 'images/2022/icone_menu.png' %}">
+            </a>
+        </div>
+        <div style="width:15%; display:flex; justify-content:center">
+            <a href="{% url 'samedi_soir' %}">
+                <img class="icone_menu" src="{% static 'images/2022/icone_menu.png' %}">
+            </a>
+        </div>
+        <div style="width:15%; display:flex; justify-content:center">
+            <a href="{% url 'dimanche_midi' %}">
+                <img class="icone_menu" src="{% static 'images/2022/icone_menu.png' %}">
+            </a>
+        </div>
+        <div style="width:15%; display:flex; justify-content:center">
+            <a href="{% url 'dimanche_soir' %}">
+                <img class="icone_menu" src="{% static 'images/2022/icone_menu.png' %}">
+            </a>
+        </div>
+    </div>
+
+    <div class="container70">
+        <div class="icone_menu_txt">Jeudi midi</div>
+        <div class="icone_menu_txt">Vendredi midi</div>
+        <div class="icone_menu_txt">Vendredi Soir</div>
+        <div class="icone_menu_txt">Samedi midi</div>
+        <div class="icone_menu_txt">Samedi Soir</div>
+        <div class="icone_menu_txt">Dimanche midi</div>
+        <div class="icone_menu_txt">Dimanche soir</div>
+    </div>
+
+    <div class="container70" style="margin-top:5vh">
+        <img style="width:33%" src="{% static 'images/2022/plat02.jpg' %}">
+        <img style="width:33%; margin:0 1vh 0 1vh;" src="{% static 'images/2022/plat01.jpg' %}">
+        <img style="width:33%" src="{% static 'images/2022/plat04.jpg' %}">
+    </div>
+
+    <div class="container" style="margin-top:5vh; margin-bottom:5vh;">
+        <div class="titre_ordi">
+            <h1>- - - - - - - - - - - - - - - - - - - - - - &nbsp;BUVETTES DE LA FOIRE&nbsp; - - - - - - - - - -
+                - - - - - - - - - - - -</h1>
+        </div>
+        <div class="titre_tel_small">- - - &nbsp;BUVETTES DE LA FOIRE&nbsp; - - -</div>
+    </div>
+
+    <div class="col">
+        <h2 style="margin-top:5vh; margin-bottom:5vh">HORAIRES des BUVETTES</h2>
+        <h3>Horaires d'ouverture de la Foire Exposition</h3>
+    </div>
+    <div class="container70" style="margin-top:5vh">
+        <img style="width:33%" src="{% static 'images/2022/buvette01.jpg' %}">
+        <img style="width:33%; margin:0 1vh 0 1vh;" src="{% static 'images/2022/buvette02.jpg' %}">
+        <img style="width:33%" src="{% static 'images/2022/buvette03.jpg' %}">
+    </div>
+</div>
+
+<div class="form_background" id="no_menu" style="text-align:center">
+    <div class="form_content" style="width:400px; height:140px; display:flex; flex-direction:column;">
+
+        <div class="form_title container">
+            <div style="width: 94%; padding: 0.5em; text-align: center"></div>
+            <div class="close_button" onclick="document.getElementById('no_menu').style.display='none'">X</div>
+        </div>
+
+        <div style="margin-top:1em">Les menus ne sont pas encore disponibles</div>
+        <div style="margin-top:0.5em">Revenez plus tard pour les consulter</div>
+    </div>
+</div>
+
+
+{% endblock content %}

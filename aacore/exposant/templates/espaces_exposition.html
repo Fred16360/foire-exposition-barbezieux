@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+{% block head_title %}{{ head_title }}{% endblock %}
+{% load static %}
+
+
+{% block slider %}
+
+<a href="{% url 'index' %}">
+    <img src="{% static 'images/logo.png' %}" class="logo">
+</a>
+<img src="{% static 'images/2022/exposant_entete.jpg' %}">
+
+{% endblock slider %}
+
+
+{% block content %}
+
+<div class="container" style="flex-wrap:wrap; margin-top: 5vh; margin-bottom: 5vh">
+    <div class="container">
+        <div style="width:16%" class="espace" id="air_libre">
+            <img src="{% static 'images/2022/air_libre.png' %}">
+            <span class="espace">Aire libre</span>
+        </div>
+    </div>
+
+    <div class="container">
+        <div style="width:16%" class="espace" id="camion_exposition">
+            <img src="{% static 'images/2022/camion_exposition.png' %}">
+            <span>Camion exposition</span>
+        </div>
+        <div class="differents_espaces">
+           <span>Les<br>Espaces</span>
+        </div>
+        <div style="width:16%" class="espace" id="stand">
+            <img src="{% static 'images/2022/stand.png' %}">
+            <span>Stand</span>
+        </div>
+    </div>
+
+    <div class="container" style="margin-top: 1vh">
+        <div style="width:16%; margin-right:1vw" class="espace" id="module_3x3">
+            <img src="{% static 'images/2022/module_3x3.png' %}">
+            <span>Chapiteau Modules 3x3</span>
+        </div>
+        <div style="width:16%; margin-left:1vw" class="espace" id="chapiteau">
+            <img src="{% static 'images/2022/chapiteau.png' %}">
+            <span>Îlot chapiteau</span>
+        </div>
+    </div>
+
+</div>
+
+{% endblock content %}

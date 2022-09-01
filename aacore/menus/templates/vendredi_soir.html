@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block head_title %}{{ head_title }}{% endblock %}
+{% load static %}
+
+
+{% block slider %}
+
+<a href="{% url 'index' %}">
+    <img src="{% static 'images/logo.png' %}" class="logo">
+</a>
+<img src="{% static 'images/2022/infos_entete.jpg' %}">
+
+{% endblock slider %}
+
+
+{% block content %}
+
+<div class="container" style="flex-wrap:wrap; margin-top:5vh; margin-bottom:5vh">
+    <img src="{% static 'images/menus/vendredi_soir.jpg' %}" class="menus" />
+</div>
+
+
+{% endblock content %}

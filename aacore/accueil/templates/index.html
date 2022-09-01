@@ -1,0 +1,197 @@
+{% extends 'base.html' %}
+{% block head_title %}{{ head_title }}{% endblock %}
+{% load static %}
+
+{% block slider %}
+
+<a href="{% url 'index' %}">
+    <img src="{% static 'images/logo.png' %}" class="logo">
+</a>
+
+<div id="slider">
+    <input type="radio" id="show_slide1" name="slider_commands">
+    <input type="radio" id="show_slide2" name="slider_commands">
+    <input type="radio" id="show_slide3" name="slider_commands">
+    <input type="radio" id="show_slide4" name="slider_commands">
+    <input type="radio" id="play_slider" name="slider_commands">
+
+    <div id="slides">
+        <figure id="slide1">
+            <img src="{% static 'images/diaporama/accueil-22-01.jpg' %}" alt="Thème 2022 : le cheval">
+        </figure>
+
+        <figure id="slide2">
+            <img src="{% static 'images/diaporama/accueil-22-02.jpg' %}" alt="Les exposants">
+        </figure>
+
+        <figure id="slide3">
+            <img src="{% static 'images/diaporama/accueil-22-03.jpg' %}" alt="La gastronomie">
+        </figure>
+
+        <figure id="slide4">
+            <img src="{% static 'images/diaporama/accueil-22-04.jpg' %}" alt="Les visiteurs">
+        </figure>
+
+    </div>
+    <nav>
+        <ul class="dots_commands">
+            <li><label for="show_slide1">Slide 1</label></li>
+            <li><label for="show_slide2">Slide 2</label></li>
+            <li><label for="show_slide3">Slide 3</label></li>
+            <li><label for="show_slide4">Slide 4</label></li>
+        </ul>
+        <label for="play_slider" aria-label="Play" id="play" title="Play">Play</label>
+    </nav>
+</div>
+
+{% endblock slider %}
+
+
+{% block content %}
+
+<div class="container" style="margin-top:5vh">
+    <div class="accueil_vedette" style="width:76%; justify-content:space-between">
+        <a href="http://chimenebadi.fr/" target="_blank">
+            <img class="vedettes" src="{% static 'images/2022/chimene_badi.png' %}" alt="La chanteuse Chimène Badi">
+        </a>
+        <a href="https://www.collectif-metisse.com/" target="_blank">
+            <img class="vedettes" src="{% static 'images/2022/collectif_metisse.png' %}" alt="Le groupe Collectif Métissé">
+        </a>
+        <a href="https://www.amirofficiel.com/" target="_blank">
+            <img class="vedettes" src="{% static 'images/2022/amir.png' %}" alt="Le chanteur Amir">
+        </a>
+    </div>
+</div>
+
+
+<div class="container" style="margin-top:5vh">
+    <a href="https://boutique.sudcharentetourisme.fr/billetterie/foire-exposition-comice-agricole-barbezieux" target="_blank">
+        <button class="billeterie">Billetterie en ligne</button>
+    </a>
+</div>
+
+
+<div class="article" style="margin-top:5vh">
+    <div class="expo_visit">
+        <div id="theme" class="theme">
+            <button class="plus_infos">Plus d'infos</button>
+        </div>
+        <div id="visiteur" class="visiteur">
+            <button class="plus_infos">Plus d'infos</button>
+        </div>
+    </div>
+
+    <div class="article" style="margin-top:5vh">
+        <div class="expo_visit">
+            <div id="exposant" class="exposant">
+                <button class="plus_infos">Plus d'infos</button>
+            </div>
+            <div class="arnaque">
+                <div style="text-align: center;font-weight:bold; color:red; font-size:1.9em">A l'attention des Exposants : ATTENTION ARNAQUE</div>
+                <div style="color:red; font-size:1.2em"><br>Vous allez peut-être recevoir un courrier émanent d'une société EXHIBITORS NETWORK vous demandant de mettre à jour vos données.</div>
+                <div style="height:0.5em"></div>
+                <div style="color:darkblue; font-weight:bold">Surtout ne signez rien, mettez tout de suite à la poubelle.</div>
+                <div style="color:darkblue; font-weight:bold">Nous vous avons déjà informé avec l'envoi de la demande d'admission.</div>
+                <div style="color:darkblue; font-weight:bold">Soyez vigilant.</div>
+                <div style="height:0.5em"></div>
+                <div style="color:red; font-size:1.2em">Ils vont encore sévir cette année et nous ne voudrions pas que nos exposants soient victimes de cette arnaque.</div>
+                <div style="height:0.5em"></div>
+                <div style="color:darkblue; font-weight:bold">Ils prennent notre identité mais cela ne nous concerne nullement.</div>
+                <div style="color:red; font-size:1.2em"><br>Bien cordialement<br>Le secrétariat foire<br>05 45 78 16 34</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="article">
+        <div class="content" style="text-align:center; margin-bottom:0vh">
+            <div class="titre_ordi">
+                <h1>- - - - - - - - - - - - - - - - - - - - - - - - - - &nbsp;FOIRE VIRTUELLE&nbsp; - - - - - - - - - - - - - -
+                    - - - - - - - - - - - -</h1>
+            </div>
+            <div class="titre_tel">- - - &nbsp;FOIRE VIRTUELLE&nbsp; - - -</div>
+
+            <div class="titre_ordi" style="justify-content:center; margin-top:3vh">
+                <video width=600 controls poster="{{ file600 }}">
+                    <source src="{{ video_pub }}" type="video/mp4">
+                </video>
+            </div>
+            <div class="titre_tel" style="margin-top:3vh">
+                <video width=350 controls poster="{{ file350 }}">
+                    <source src="{{ video_pub }}" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </div>
+
+    <div class="article">
+        <div class="content" style="text-align:center">
+            <div class="titre_ordi">
+                <h1>- - - - - - - - - - - - - - - - - - - - - - - - - - &nbsp;INFOS PRATIQUES&nbsp; - - - - - - - - - - - - - -
+                    - - - - - - - - - - - -</h1>
+            </div>
+            <div class="titre_tel">- - - &nbsp;INFOS PRATIQUES&nbsp; - - -</div>
+            <div style="margin-top: 2vh; margin-bottom: 5vh">
+                <h2>HORAIRES</h2>
+            </div>
+
+            <h3>LA FOIRE EXPOSITION DE BARBEZIEUX</h3>
+            <h3>SE TIENDRA <span style="font-weight:bold">LES 2, 3 et 4 SEPTEMBRE 2022</span></h3>
+            <div style="margin-top:3vh; margin-bottom:3vh">
+                <h3>Ouverture de la foire : <span style="font-weight:bold">09h30</span></h3>
+                <h3>Fermeture de la foire : <span style="font-weight:bold">20h30</span></h3>
+                <h3>Fermeture de l'espace gastronomie : <span style="font-weight:bold">00h00</span></h3>
+            </div>
+            <h3>Pour plus d'informations, retrouvez les <span style="font-weight:bold">
+                    <a href="{% url 'horaires_tarifs' %}">tarifs</a></span> et le <span style="font-weight:bold">
+                    <a href="{% static 'images/plans/PG-FOIRE-BASE-2019.pdf' %}" target="_blank">plan de la foire</a></span>
+            </h3>
+        </div>
+    </div>
+</div>
+    {% endblock content %}
+
+
+    {% block plan %}
+
+    <div class="article">
+        <div class="content">
+            <div class="titre_ordi">
+                <h1>- - - - - - - - - - - - - - - - - - - - - - - - - - - &nbsp;PLAN ACCES&nbsp; - - - - - - - - - - - - - - -
+                    - - - - - - - - - - - -</h1>
+            </div>
+            <div class="titre_tel">- - - &nbsp;PLAN ACCES&nbsp; - - -</div>
+        </div>
+    </div>
+    <div>
+        <a href="https://www.google.fr/maps/@45.470676,-0.1490664,15z" target="_blank">
+            <img src="{% static 'images/plan_acces.jpg' %}">
+        </a>
+    </div>
+
+    {% endblock plan %}
+
+
+    {% block pub_partenaire %}
+
+    <div class="article">
+        <div class="content">
+            <div class="titre_ordi">
+                <h1>- - - - - - - - - - - - - - - - - - - - - - - - - &nbsp;NOS PARTENAIRES&nbsp; - - - - - - - - - - - - - -
+                    - - - - - - - - - - -</h1>
+            </div>
+            <div class="titre_tel">- - - &nbsp;NOS PARTENAIRES&nbsp; - - -</div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="cont_pub_col">
+            <div class="pub_col">
+                <div class="pub_col01"></div>
+                <div class="pub_col02"></div>
+                <div class="pub_col03"></div>
+                <div class="pub_col04"></div>
+                <div class="pub_col05"></div>
+            </div>
+        </div>
+    </div>
+
+    {% endblock pub_partenaire %}

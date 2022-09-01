@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+{% block head_title %}{{ head_title }}{% endblock %}
+{% load static %}
+
+
+{% block slider %}
+
+<a href="{% url 'index' %}">
+    <img src="{% static 'images/logo.png' %}" class="logo">
+</a>
+<img src="{% static 'images/2022/exposant_entete.jpg' %}">
+
+{% endblock slider %}
+
+
+{% block content %}
+
+<div class="container" style="flex-wrap:wrap; margin-top:5vh; margin-bottom:5vh">
+    <div class="container">
+        <div class="titre_ordi">
+            <h1>- - - - - - - - - - - - - - - - - - - - - - - - - - &nbsp;STAND&nbsp; - - - - - - - - - - - - - -
+                - - - - - - - - - - - -</h1>
+        </div>
+    </div>
+    <div class="titre_tel">- - - &nbsp;STAND&nbsp; - - -</div>
+
+    <div class="container">
+        <div class="edition_row70">
+            <div class="espace_img">
+                <img src="{% static 'images/2022/espace/stand_01.jpg' %}">
+                <div class="espace">Stand Simple (2,5 x 2,5 m)</div>
+            </div>
+            <div style="width:5%"></div>
+            <div class="espace_img">
+                <img src="{% static 'images/2022/espace/stand_02.jpg' %}">
+                <div class="espace">Stand Double</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="edition_row70">
+        <div class="espace_img">
+            <img src="{% static 'images/2022/espace/stand_03.jpg' %}">
+            <div class="espace">Stand Triple</div>
+        </div>
+        <div style="width:5%"></div>
+        <div class="espace_img">
+            <img src="{% static 'images/2022/espace/stand_04.jpg' %}">
+            <div class="espace">Stand Quadruple</div>
+        </div>
+    </div>
+</div>
+
+    <div class="container" style="margin-top:5vh; justify-content:end">
+        <a href="{% url 'espaces_exposition' %}">
+            <h3>Retour aux espaces d'exposition -></h3>
+        </a>
+    </div>
+
+</div>
+
+{% endblock content %}

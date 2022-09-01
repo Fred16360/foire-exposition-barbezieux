@@ -1,0 +1,57 @@
+@media (min-width: 1281px) and (max-width:1600px) {
+    .dp-479max {
+        display: none;
+    }
+    .dp-480-959 {
+        display: none;
+    }
+    .dp-960-1280 {
+        display: none;
+    }
+    .dp-1601-1920 {
+        display: none;
+    }
+    .dp-1921-2560 {
+        display: none;
+    }
+    .contact {
+        font-size: 1.8vw;
+    }
+    .fleche_center img {
+        width: 80px;
+        height: 60px;
+        margin-top: 0px;
+    }
+    #techniques figure img,
+    #actualites figure img,
+    #realisations figure img {
+        max-width: 400px;
+    }
+    #actualites figure figcaption,
+    #realisations figure figcaption {
+        font-size: 1.2vw;
+        max-width: 400px;
+    }
+    .actu {
+        max-width: 400px;
+        margin-left: 1vw;
+        margin-right: 1vw;
+    }
+    .col_01 img {
+        width: 50%;
+    }
+    .texte_bas_page,
+    .texte_bas_page a {
+        font-size: 1.2vw;
+        font-weight: normal;
+    }
+    .menus {
+        width: 700px;
+    }
+}
+
+@media(min-width: 1281px) {
+    .dp-1281-1600 {
+        display: flex;
+    }
+}

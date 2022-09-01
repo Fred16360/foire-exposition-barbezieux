@@ -1,0 +1,781 @@
+{% extends 'base.html' %}
+{% block head_title %}{{ head_title }}{% endblock %}
+{% load static %}
+
+
+{% block slider %}
+
+<a href="{% url 'index' %}">
+    <img src="{% static 'images/logo.png' %}" class="logo">
+</a>
+<img src="{% static 'images/2022/exposant_entete.jpg' %}">
+
+{% endblock slider %}
+
+
+{% block content %}
+
+<div class="container" style="flex-wrap:wrap; margin-top:5vh; margin-bottom:5vh">
+    <div class="container" style="margin-bottom:5vh;">
+        <dic class="titre_ordi">
+            <h1>- - - - - - - - - - - - - - - - - &nbsp;FOIRE EXPOSITION COMICE AGRICOLE 2022&nbsp; - - - - - - -
+                - - - - - - - - - -</h1>
+    </div>
+    <div class="titre_tel_small">- - - &nbsp;FOIRE EXPOSITION COMICE AGRICOLE 2022&nbsp; - - -</div>
+</div>
+
+<div class="titre_page">PROGRAMME CHARENTE LIBRE</div>
+<div class="titre_page" style="margin-bottom:5vh">(200 000 lecteurs) - 16 Pages</div>
+
+<div class="container">
+    <div class="pub_row70">
+        <div class="espace_pub_bc bl">Module 1</div>
+        <div class="espace_pub">3.4 x 9.4</div>
+        <div class="espace_pub_bc">170 € H.T.</div>
+        <div class="espace_pub">204.00 € TTC</div>
+        <div class="espace_pub_bc bl">Module 5</div>
+        <div class="espace_pub">11 x 24.3 (1/4 page)</div>
+        <div class="espace_pub_bc">560 € H.T.</div>
+        <div class="espace_pub br">672.00 TTC</div>
+    </div>
+</div>
+<div class="container">
+    <div class="pub_row70">
+        <div class="espace_pub_bc" style="border-left: 1px solid #68533C">Module 2</div>
+        <div class="espace_pub">3.4 x 14.3</div>
+        <div class="espace_pub_bc">220 € H.T.</div>
+        <div class="espace_pub">264.00 € TTC</div>
+        <div class="espace_pub_bc" style="border-left: 1px solid #68533C">Module 6</div>
+        <div class="espace_pub">18.6 x 24.3 (1/2 page)</div>
+        <div class="espace_pub_bc">1000 € H.T.</div>
+        <div class="espace_pub" style="border-right: 1px solid #68533C">1200.00 TTC</div>
+    </div>
+</div>
+<div class="container">
+    <div class="pub_row70">
+        <div class="espace_pub_bc" style="border-left: 1px solid #68533C">Module 3</div>
+        <div class="espace_pub">7 x 9.4</div>
+        <div class="espace_pub_bc">270 € H.T.</div>
+        <div class="espace_pub">324.00 € TTC</div>
+        <div class="espace_pub_bc" style="border-left: 1px solid #68533C">Module 7</div>
+        <div class="espace_pub">1 PAGE</div>
+        <div class="espace_pub_bc">1700 € H.T.</div>
+        <div class="espace_pub" style="border-right: 1px solid #68533C">2040.00 TTC</div>
+    </div>
+</div>
+<div class="container">
+    <div class="pub_row70">
+        <div class="espace_pub_bc bb" style="border-left: 1px solid #68533C">Module 4</div>
+        <div class="espace_pub bb">13.8 x 9.4</div>
+        <div class="espace_pub_bc bb">460 € H.T.</div>
+        <div class="espace_pub bb">552.00 € TTC</div>
+        <div class="espace_pub_bc bb" style="border-left: 1px solid #68533C">Module 7</div>
+        <div class="espace_pub bb">Dernière page</div>
+        <div class="espace_pub_bc bb">2000 € H.T.</div>
+        <div class="espace_pub bb" style="border-right: 1px solid #68533C">2402.00 TTC</div>
+    </div>
+</div>
+
+<div class="titre_page" style="margin-top:5vh">SUD-OUEST - CHARENTE LIBRE</div>
+<div class="titre_page" style="margin-bottom:5vh">4 Pages + 1</div>
+
+<div class="container">
+    <div class="pub_row70">
+        <div class="espace_pub_bc" style="border-left: 1px solid #68533C">Module 1</div>
+        <div class="espace_pub">5 X 2.8</div>
+        <div class="espace_pub_bc">110 € H.T.</div>
+        <div class="espace_pub">132.00 € TTC</div>
+        <div class="espace_pub_bc" style="border-left: 1px solid #68533C">Module 4</div>
+        <div class="espace_pub">5 X 18</div>
+        <div class="espace_pub_bc">500 € H.T.</div>
+        <div class="espace_pub" style="border-right: 1px solid #68533C">600.00 TTC</div>
+    </div>
+</div>
+<div class="container">
+    <div class="pub_row70">
+        <div class="espace_pub_bc" style="border-left: 1px solid #68533C">Module 2</div>
+        <div class="espace_pub">5 X 6</div>
+        <div class="espace_pub_bc">160 € H.T.</div>
+        <div class="espace_pub">192.00 € TTC</div>
+        <div class="espace_pub_bc" style="border-left: 1px solid #68533C">Module 5</div>
+        <div class="espace_pub">1/4 page</div>
+        <div class="espace_pub_bc">800 € H.T.</div>
+        <div class="espace_pub" style="border-right: 1px solid #68533C">960.00 TTC</div>
+    </div>
+</div>
+<div class="container">
+    <div class="pub_row70">
+        <div class="espace_pub_bc bb" style="border-left: 1px solid #68533C">Module 3</div>
+        <div class="espace_pub bb">5 X 12</div>
+        <div class="espace_pub_bc bb">280 € H.T.</div>
+        <div class="espace_pub bb">336.00 € TTC</div>
+        <div class="espace_pub_bc bb" style="border-left: 1px solid #68533C"></div>
+        <div class="espace_pub bb"></div>
+        <div class="espace_pub_bc bb"></div>
+        <div class="espace_pub bb" style="border-right: 1px solid #68533C"></div>
+    </div>
+</div>
+
+<div class="container" style="margin-top:5vh; width:70%; justify-content:end">
+    <div class="titre_page">SPOTS PUBLICITAIRE DANS LA FOIRE</div>
+</div>
+
+<div class="container titre_page" style="width:70%; margin-bottom:5vh">
+    <div style="width:40%"></div>
+    <div style="width:10%">* le spot</div>
+    <div style="width:10%">15 € HT</div>
+    <div style="width:10%">18 € TTC</div>
+    <div style="width:5%">-</div>
+    <div style="width:15%">60 € HT les 5</div>
+    <div style="width:10%">72 € TTC</div>
+</div>
+
+<div class="container" style="margin-bottom:5vh">
+    <div class="titre_page">POSE DE VOS BANDEROLES INTERIEURES ET EXTERIEURES</div>
+</div>
+
+<div class="container">
+    <div class="pub_row70">
+        <div class="espace_pub_bc bl bold w40">Intérieur Foire</div>
+        <div class="espace_pub bl w30">
+            <div class="container">
+                <div><span class="bold">90 € HT</span><span>&nbsp;(la banderole)&nbsp;</span><span class="bold">-> 108 €
+                        TTC</span></div>
+            </div>
+        </div>
+        <div class="espace_pub bl br w30">
+            <div class="container">
+                <div class="bold">150 € HT </div>&nbsp;(les 2)&nbsp;<div class="bold"> -> 180 € TTC</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="pub_row70">
+        <div class="espace_pub_bc bl w40">
+            <span class="bold">Enceinte Foire</span>&nbsp;<span>(Entourage foire extérieure)</span>
+        </div>
+        <div class="espace_pub bl w30">
+            <div><span class="bold">150 € HT</span><span>&nbsp;(la banderole)&nbsp;</span><span class="bold">-> 180 €
+                    TTC</span></div>
+        </div>
+        <div class="espace_pub bl br w30">
+            <div class="container">
+                <div class="bold">200 € HT </div>&nbsp;(les 2)&nbsp;<div class="bold"> -> 240 € TTC</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="pub_row70">
+        <div class="espace_pub_bc bl w40">
+            <div class="col">
+                <div class="bold">Banderole extérieure</div>
+                <div>(Fabrication et réalisation par nos soins)</div>
+            </div>
+        </div>
+        <div class="espace_pub bl w30">
+            <div class="col bold">
+                <div>Banderole PVC (6m x 1m)</div>
+                <div style="text-decoration:underline">1ère année :</div>
+                <div>500 € HT (1 face) -> 600 € TTC</div>
+            </div>
+        </div>
+        <div class="espace_pub bl br w30">
+            <div class="col bold">
+                <div style="text-decoration:underline">2ème année et 3ème année :</div>
+                <div>300 € HT -> 360 € TTC (1 face)</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="pub_row70 bb">
+        <div class="espace_pub_bc bl w40">
+            <div class="col bold">
+                <div>Banderole 2m x 3m</div>
+                <div>Propriété du partenaire</div>
+                <div>pose intérieure foire</div>
+            </div>
+        </div>
+        <div class="espace_pub bl w30">
+            <div class="col bold">
+                <div>600 € HT (3 jours)</div>
+            </div>
+        </div>
+        <div class="espace_pub bl br w30">
+            <div class="col bold">
+                <div>720 € TTC</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container" style="margin-top:5vh; margin-bottom:5vh">
+    <div class="titre_page">PARTENARIAT</div>
+</div>
+
+<div class="container">
+    <div class="pub_row70">
+        <div class="espace_pub bold bl w25" style="height:auto">BILLETERIE</div>
+        <div class="espace_pub_bc w25" style="height:auto">
+            <div class="col" style="padding:1vh 0 1vh 0">
+                <div>Entrée</div>
+                <div style="margin-bottom:1vh">(15 000 Billets)</div>
+                <div>Snack 2000 cartons</div>
+            </div>
+        </div>
+        <div class="espace_pub w25" style="height:auto">
+            <div class="col bold" style="padding:1vh 0 1vh 0">
+                <div>500 € HT</div>
+                <div style="margin-bottom:1vh">&nbsp;</div>
+                <div>500 € HT</div>
+            </div>
+        </div>
+        <div class="espace_pub_bc br w25" style="height:auto">
+            <div class="col bold" style="padding:1vh 0 1vh 0">
+                <div>600 € TTC</div>
+                <div style="margin-bottom:1vh">&nbsp;</div>
+                <div>600 € TTC</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="pub_row70">
+        <div class="espace_pub bold bl w25" style="height:auto">INVITATIONS</div>
+        <div class="espace_pub_bc w25" style="height:auto">
+            <div class="col" style="padding:1vh 0 1vh 0">
+                <div>Inauguration</div>
+                <div style="margin-bottom:1vh">(300 invitations)</div>
+                <div>Cheval</div>
+                <div>(1000)</div>
+            </div>
+        </div>
+        <div class="espace_pub w25" style="height:auto">
+            <div class="col bold" style="padding:1vh 0 1vh 0">
+                <div>150 € HT</div>
+                <div style="margin-bottom:1vh">&nbsp;</div>
+                <div>500 € HT</div>
+                <div>&nbsp;</div>
+            </div>
+        </div>
+        <div class="espace_pub_bc br w25" style="height:auto">
+            <div class="col bold" style="padding:1vh 0 1vh 0">
+                <div>180 € TTC</div>
+                <div style="margin-bottom:1vh">&nbsp;</div>
+                <div>600 € TTC</div>
+                <div>&nbsp;</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="pub_row70">
+        <div class="espace_pub bold bl w25" style="height:auto">SIGNALETIQUE EXTERIEURE FOIRE</div>
+        <div class="espace_pub_bc w25" style="height:auto">
+            <div class="col" style="padding:1vh 0 1vh 0">
+                <div>100 flèches</div>
+                <div>(20 x 80)</div>
+            </div>
+        </div>
+        <div class="espace_pub w25" style="height:auto">
+            <div class="col bold" style="padding:1vh 0 1vh 0">
+                <div>1ère année</div>
+                <div>500 € HT</div>
+                <div>600 € TTC</div>
+            </div>
+        </div>
+        <div class="espace_pub_bc br w25" style="height:auto">
+            <div class="col bold" style="padding:1vh 0 1vh 0">
+                <div>2ème et 3ème année</div>
+                <div>250 € HT</div>
+                <div>300 € TTC</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="pub_row70">
+        <div class="espace_pub bold bl w25" style="height:auto">SIGNALETIQUE INTERIEURE FOIRE</div>
+        <div class="espace_pub_bc w25" style="height:auto">
+            <div class="col" style="padding:1vh 0 1vh 0">
+                <div>100 panneaux</div>
+                <div>dans toute la foire</div>
+            </div>
+        </div>
+        <div class="espace_pub w25" style="height:auto">
+            <div class="col bold" style="padding:1vh 0 1vh 0">
+                <div>500 € HT</div>
+            </div>
+        </div>
+        <div class="espace_pub_bc br w25" style="height:auto">
+            <div class="col bold" style="padding:1vh 0 1vh 0">
+                <div>600 € TTC</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="pub_row70">
+        <div class="espace_pub bold bl w25">ANIMATIONS DIVERSES</div>
+        <div class="espace_pub_bc w25">
+            <div class="col" style="padding:1vh 0 1vh 0">
+                <div>&nbsp;</div>
+                <div style="margin-bottom:1vh">Jeu Visiteurs</div>
+                <div>2 voyages 1 semaine</div>
+            </div>
+        </div>
+        <div class="espace_pub w25">
+            <div class="col bold" style="padding:1vh 0 1vh 0">
+                <div>Bulletin jeu</div>
+                <div style="margin-bottom:1vh">300 € HT</div>
+                <div>1200 € TTC</div>
+            </div>
+        </div>
+        <div class="espace_pub_bc br w25">
+            <div class="col bold" style="padding:1vh 0 1vh 0">
+                <div>&nbsp;</div>
+                <div style="margin-bottom:1vh">360 € TTC</div>
+                <div>1440 € TTC</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="pub_row70">
+        <div class="espace_pub bold bl w25">PODIUM FOIRE</div>
+        <div class="espace_pub_bc w25">
+            <div class="col" style="padding:1vh 0 1vh 0">
+                <div style="margin-bottom:1vh">Bandeau haut (1)</div>
+                <div style="margin-bottom:1vh">Panneau côté extérieur (2)</div>
+                <div style="margin-bottom:1vh">Panneau côté intérieur (3)</div>
+                <div style="margin-bottom:1vh">Panneau côté intérieur (4)</div>
+            </div>
+        </div>
+        <div class="espace_pub w25">
+            <div class="col bold" style="padding:1vh 0 1vh 0">
+                <div style="margin-bottom:1vh">1000 € HT</div>
+                <div style="margin-bottom:1vh">600 € HT</div>
+                <div style="margin-bottom:1vh">500 € HT</div>
+                <div style="margin-bottom:1vh">800 € HT</div>
+            </div>
+        </div>
+        <div class="espace_pub_bc br w25">
+            <div class="col bold" style="padding:1vh 0 1vh 0">
+                <div style="margin-bottom:1vh">1200 € TTC</div>
+                <div style="margin-bottom:1vh">720 € TTC</div>
+                <div style="margin-bottom:1vh">600 € TTC</div>
+                <div style="margin-bottom:1vh">960 € TTC</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="pub_row70">
+        <div class="bl w25"></div>
+        <div class="espace_pub_bc br w75">
+            <div class="col">
+                <div>1 - 2 - 3 : publicité fournie par le partenaire</div>
+                <div>4 : en charge de la foire exposition</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="pub_row70">
+        <div class="espace_pub bold bl w25">BANDES ANNONCES</div>
+        <div class="espace_pub_bc w25">
+            <div class="col" style="padding:1vh 0 1vh 0">
+                <div style="margin-bottom:1vh">CHARENTE LIBRE</div>
+                <div>quotidiens exposants</div>
+            </div>
+        </div>
+        <div class="espace_pub w25">
+            <div class="col bold" style="padding:1vh 0 1vh 0">
+                <div style="margin-bottom:1vh">Vendredi : 350 € HT</div>
+                <div>Samedi : 350 € HT</div>
+            </div>
+        </div>
+        <div class="espace_pub_bc br w25">
+            <div class="col bold" style="padding:1vh 0 1vh 0">
+                <div style="margin-bottom:1vh">420 € TTC</div>
+                <div>420 € TTC</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="pub_row70">
+        <div class="espace_pub bold bl w25">PANNEAUX AQUILUX</div>
+        <div class="espace_pub_bc w25">
+            <div class="col" style="padding:1vh 0 1vh 0">
+                <div>150 panneaux</div>
+            </div>
+        </div>
+        <div class="espace_pub w25">
+            <div class="col bold" style="padding:1vh 0 1vh 0">
+                <div>800 € HT</div>
+            </div>
+        </div>
+        <div class="espace_pub_bc br w25">
+            <div class="col bold" style="padding:1vh 0 1vh 0">
+                <div>960 € TTC</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="pub_row70">
+        <div class="espace_pub bold bl w25">PANNEAUX "Entrée de ville"</div>
+        <div class="espace_pub_bc w25">
+            <div class="col" style="padding:1vh 0 1vh 0">
+                <div>Publicité sous le panneau</div>
+                <div>8 panneaux</div>
+            </div>
+        </div>
+        <div class="espace_pub w25">
+            <div class="col bold" style="padding:1vh 0 1vh 0">
+                <div>100 € HT le panneau</div>
+                <div>700 € HT les 8</div>
+            </div>
+        </div>
+        <div class="espace_pub_bc br w25">
+            <div class="col bold" style="padding:1vh 0 1vh 0">
+                <div>120 € TTC</div>
+                <div>840 € TTC</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="pub_row70">
+        <div class="espace_pub bold bl w25">
+            <div class="col" style="align-items:flex-start; margin-left:2vw; padding:1vh 0 1vh 0">
+                <div>PANNEAUX</div>
+                <div>
+                    <ul>
+                        <li style="margin-left:2vw">"Rocade"</li>
+                        <li style="margin-left:2vw">"Route d'Archiac"</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="espace_pub_bc w25">
+            <div class="col" style="padding:1vh 0 1vh 0">
+                <div>2 panneaux</div>
+            </div>
+        </div>
+        <div class="espace_pub w25">
+            <div class="col bold" style="padding:1vh 0 1vh 0">
+                <div>&nbsp;</div>
+                <div>800 € HT</div>
+                <div>400 € HT</div>
+            </div>
+        </div>
+        <div class="espace_pub_bc br w25">
+            <div class="col bold" style="padding:1vh 0 1vh 0">
+                <div>&nbsp;</div>
+                <div>960 € TTC</div>
+                <div>480 € TTC</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="pub_row70">
+        <div class="espace_pub bold bl w25" style="font-size:0.8em">PANNEAUX : ENTREES ET SORTIES PARKING</div>
+        <div class="espace_pub_bc w25">
+            <div class="col" style="padding:1vh 0 1vh 0">
+                <div>1 panneau</div>
+            </div>
+        </div>
+        <div class="espace_pub w25">
+            <div class="col bold" style="padding:1vh 0 1vh 0">
+                <div>250 € HT</div>
+            </div>
+        </div>
+        <div class="espace_pub_bc br w25">
+            <div class="col bold" style="padding:1vh 0 1vh 0">
+                <div>300 € TTC</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="pub_row70">
+        <div class="espace_pub bold bl w25">PROSPECTUS QUADRI FOIRE EXPO</div>
+        <div class="espace_pub_bc w25">
+            <div class="col" style="padding:1vh 0 1vh 0">
+                <div>15000 sur 4B +</div>
+                <div>CHATEAUNEUF</div>
+            </div>
+        </div>
+        <div class="espace_pub w25">
+            <div class="col bold" style="padding:1vh 0 1vh 0">
+                <div>600 € HT</div>
+                <div>Bandeau 1 page</div>
+            </div>
+        </div>
+        <div class="espace_pub_bc br w25">
+            <div class="col bold" style="padding:1vh 0 1vh 0">
+                <div>720 € TTC</div>
+                <div>&nbsp;</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="pub_row70">
+        <div class="espace_pub bold bl w25">
+            <div class="col">
+                <div>PLAN FOIRE</div>
+                <div>6 PANNEAUX</div>
+            </div>
+        </div>
+        <div class="espace_pub_bc w25">
+            <div class="col" style="padding:1vh 0 1vh 0">
+                <div>LOGO-PUBLICITE</div>
+                <div>33 x 40 cm</div>
+                <div>24 emplacements</div>
+            </div>
+        </div>
+        <div class="espace_pub w25">
+            <div class="col bold" style="padding:1vh 0 1vh 0">
+                <div>&nbsp;</div>
+                <div>50 € HT</div>
+                <div>1 emplacement</div>
+            </div>
+        </div>
+        <div class="espace_pub_bc br w25">
+            <div class="col bold" style="padding:1vh 0 1vh 0">
+                <div>&nbsp;</div>
+                <div>60 € TTC</div>
+                <div>&nbsp;</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="pub_row70">
+        <div class="espace_pub bl br" style="padding:2vh 0 2vh 0; width:100%">NUMERIQUE</div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="pub_row70">
+        <div class="espace_pub bold bl w25" style="padding:1vh 0 1vh 0">SITE INTERNET</div>
+        <div class="espace_pub_bc w25">BANDEAUX</div>
+        <div class="espace_pub w25">400 € HT</div>
+        <div class="espace_pub_bc br w25">480 € TTC</div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="pub_row70">
+        <div class="espace_pub bold bl w25">
+            <div class="col" style="align-items:flex-start; margin-left:2vw; padding:1vh 0 1vh 0">
+                <div>ESPACE VIRTUEL</div>
+                <div>
+                    <ol>
+                        <li style="margin-left:2vw">EXPOSANTS</li>
+                        <li style="margin-left:2vw">PARTENAIRES</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <div class="espace_pub_bc w25">
+            <div class="col" style="padding:1vh 0 1vh 0">
+                <div>&nbsp;</div>
+                <div>Du 01/07/2022</div>
+                <div>Au 31/12/2022</div>
+            </div>
+        </div>
+        <div class="espace_pub w25">
+            <div class="col bold" style="padding:1vh 0 1vh 0">
+                <div>&nbsp;</div>
+                <div>200 € HT</div>
+                <div>&nbsp;</div>
+            </div>
+        </div>
+        <div class="espace_pub_bc br w25">
+            <div class="col bold" style="padding:1vh 0 1vh 0">
+                <div>&nbsp;</div>
+                <div>240 € TTC</div>
+                <div>&nbsp;</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="pub_row70 bb">
+        <div class="espace_pub bold bl w25">
+            <div class="col" style="align-items:flex-start; margin-left:2vw; padding:1vh 0 1vh 0">
+                <div>WANCOM</div>
+                <div>6 panneaux lumineux (3m x 3m)</div>
+                <div>ANGOULEME -</div>
+                <div>COGNAC - SAINTES</div>
+            </div>
+        </div>
+        <div class="espace_pub_bc w25">
+            <div class="col" style="padding:1vh 0 1vh 0">
+                <div>Bandeau</div>
+                <div>15 jours</div>
+                <div>&nbsp;</div>
+                <div>&nbsp;</div>
+            </div>
+        </div>
+        <div class="espace_pub w25">
+            <div class="col bold" style="padding:1vh 0 1vh 0">
+                <div>Angoulême : 2</div>
+                <div>Cognac : 2</div>
+                <div>Saintes : 2</div>
+                <div>100 € HT les 2 panneaux</div>
+            </div>
+        </div>
+        <div class="espace_pub_bc br w25">
+            <div class="col bold" style="padding:1vh 0 1vh 0">
+                <div>120 € TTC</div>
+                <div>120 € TTC</div>
+                <div>120 € TTC</div>
+                <div>&nbsp;</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container" style="margin-bottom:5vh; margin-top:5vh">
+    <div class="titre_page">Le comité de la foire vous offre pour votre participation</div>
+</div>
+
+<div class="container">
+    <div class="pub_row70">
+        <div class="espace_pub bold bl w25" style="padding:1vh 0 1vh 0">15 à 60 € HT</div>
+        <div class="espace_pub_bc br w75">&#11050; 1 invitation Foire</div>
+    </div>
+</div>
+
+<!--  dfklmqjsdlfjkqsmkfjqsmdlfj -->
+<div class="container">
+    <div class="pub_row70">
+        <div class="espace_pub bold bl w25">
+            <div class="col" style="padding:1vh 0 1vh 0">
+                <div>110 à 200 € HT</div>
+            </div>
+        </div>
+        <div class="espace_pub_bc br w75">
+            <div class="col" style="padding:1vh 0 1vh 0">
+                <div>&#11050; 2 invitations Foire</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="pub_row70">
+        <div class="espace_pub bold bl w25">
+            <div class="col" style="padding:1vh 0 1vh 0">
+                <div>250 à 450 € HT</div>
+            </div>
+        </div>
+        <div class="espace_pub_bc br w75">
+            <div class="col" style="padding:1vh 0 1vh 0">
+                <div>&#11050; 2 invitations Foire</div>
+                <div>&#11050; Inauguration Apéritif</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="pub_row70">
+        <div class="espace_pub bold bl w25">
+            <div class="col" style="padding:1vh 0 1vh 0">
+                <div>500 à 800 € HT</div>
+            </div>
+        </div>
+        <div class="espace_pub_bc br w75">
+            <div class="col" style="padding:1vh 0 1vh 0">
+                <div>&#11050; 2 invitations Foire</div>
+                <div>&#11050; Inauguration Apéritif</div>
+                <div>&#11050; Apéritif clôture avec vedette</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="pub_row70">
+        <div class="espace_pub bold bl w25">
+            <div class="col" style="padding:1vh 0 1vh 0">
+                <div>1000 à 1500 € HT</div>
+            </div>
+        </div>
+        <div class="espace_pub_bc br w75">
+            <div class="col" style="padding:1vh 0 1vh 0">
+                <div>&#11050; 10 invitations Foire</div>
+                <div>&#11050; Inauguration Apéritif</div>
+                <div>&#11050; Apéritif clôture avec vedette</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="pub_row70">
+        <div class="espace_pub bold bl w25">
+            <div class="col" style="padding:1vh 0 1vh 0">
+                <div>16000 à 4500 € HT</div>
+            </div>
+        </div>
+        <div class="espace_pub_bc br w75">
+            <div class="col" style="padding:1vh 0 1vh 0">
+                <div>&#11050; 10 invitations Foire</div>
+                <div>&#11050; Inauguration Apéritif</div>
+                <div>&#11050; Apéritif clôture avec vedette</div>
+                <div>&#11050; 2 places (loge devant podium pour spectacle vedette)</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="pub_row70">
+        <div class="espace_pub bold bl bb w25">
+            <div class="col" style="padding:1vh 0 1vh 0">
+                <div>4600 € HT et plus</div>
+            </div>
+        </div>
+        <div class="espace_pub_bc br bb w75">
+            <div class="col" style="padding:1vh 0 1vh 0">
+                <div>&#11050; 10 invitations Foire</div>
+                <div>&#11050; Inauguration Apéritif</div>
+                <div>&#11050; Apéritif clôture avec vedette</div>
+                <div>&#11050; 2 places (loge devant podium pour spectacle vedette)</div>
+                <div>&#11050; + autres prestations à la carte</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div style="margin-bottom: 2vh"></div>
+
+{% endblock content %}

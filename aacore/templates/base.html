@@ -1,0 +1,241 @@
+{% load static %}
+
+{% load google_analytics_tags %}
+
+
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="93f19659-477c-4c10-ad06-17d612807425" data-blockingmode="auto" type="text/javascript"></script>
+
+    <meta http-equiv="content-type" charset="text/html; utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{% block head_title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/menu.css' %}">
+    <link rel="stylesheet" href="{% static 'css/slider.css' %}">
+    <link rel="stylesheet" href="{% static 'css/mq-479max.css' %}">
+    <link rel="stylesheet" href="{% static 'css/mq-480-959.css' %}">
+    <link rel="stylesheet" href="{% static 'css/mq-960-1280.css' %}">
+    <link rel="stylesheet" href="{% static 'css/mq-1281-1600.css' %}">
+    <link rel="stylesheet" href="{% static 'css/mq-1601-1920.css' %}">
+    <link rel="stylesheet" href="{% static 'css/mq-1921-2560.css' %}">
+    <!-- <link rel="stylesheet" href="{% static 'css/cookielaw.css' %}"> -->
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-49686531-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-49686531-1');
+    </script>
+
+    <!--  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">-->
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="{% static 'js/script.js' %}" async></script>
+    <!-- <script src="{% static 'js/cookielaw.js' %}" async></script> -->
+</head>
+
+<body>
+    <div class="container dp-479max dp-480-959" style="margin-top:5px">
+        <div class="container" id="menu_burger" style="flex-direction: column; align-items: flex-start;margin-left:10px">
+            <div class="menu_burger"></div>
+            <div class="menu_burger"></div>
+            <div class="menu_burger"></div>
+        </div>
+
+        <div>
+            <a href="{% url 'index' %}">
+                <img src="{% static 'images/logo02.png' %}">
+            </a>
+        </div>
+    </div>
+
+    <nav class="nav menu_off" id="nav_tel" role="navigation">
+        <ul class="menu">
+            <li id="menu1"><a href="{% url 'index' %}">ACCUEIL</a></li>
+            <li class="has-children"><a href="#" onclick="sousmenu(1);">EXPOSANTS</a></li>
+            <ul class="sous-menu" id="sous-menu1">
+                <li><a href="{% url 'exposants' %}">Vous souhaitez exposer ?</a></li>
+                <li><a href="{% url 'dossier_admission' %}">Dossiers d'admission</a></li>
+                <li><a href="{% url 'espaces_exposition' %}">Espaces d'exposition</a></li>
+                <li><a href="{% url 'espaces_publicitaires' %}">Espaces publicitaires</a></li>
+                <li><a href="{% url 'liste_exposants' %}">Liste des exposants</a></li>
+                <li><a href="{% url 'contact' %}">Contact</a></li>
+            </ul>
+            <li class="has-children"><a href="#" onclick="sousmenu(2);">INFOS PRATIQUES</a>
+                <ul class="sous-menu" id="sous-menu2">
+                    <li><a href="{% url 'horaires_tarifs' %}">Horaires & Tarifs</a></li>
+                    <li><a href="https://boutique.sudcharentetourisme.fr/billetterie/foire-exposition-comice-agricole-barbezieux" target="_blank">Billeterie en ligne</a></li>
+                    <li><a href="{% static 'images/plans/PG-FOIRE-BASE-2022.pdf' %}" target="_blank">Plan de la Foire</a></li>
+                    <li><a href="{% static 'images/plans/CG-FOIRE-2022.pdf' %}" target="_blank">Plan d'accès à la Foire</a></li>
+                    <li><a href="{% url 'resto_buvettes_foire' %}">Resto et buvettes de la Foire</a></li>
+                    <li><a href="{% url 'espace_gastronomie' %}">L'espace gastronomie</a></li>
+                </ul>
+            </li>
+            <li class="has-children"><a href="#" onclick="sousmenu(3);">ANIMATIONS 2022</a>
+                <ul class="sous-menu" id="sous-menu3">
+                    <li><a style="height:60px" href="{% url 'reglement_concours' %}">Règlement concours Pineau et Eaux de vie nouvelles</a></li>
+                    <li><a href="{% url 'animations_vendredi' %}">Vendredi 02/09/2022</a></li>
+                    <li><a href="{% url 'animations_samedi' %}">Samedi 03/09/2022</a></li>
+                    <li><a href="{% url 'animations_dimanche' %}">Dimanche 04/09/2022</a></li>
+                    <li><a href="{% url 'animations_cheval' %}">Animations Cheval</a></li>
+                    <li><a href="{% url 'autres_animations' %}">Autres Animations</a></li>
+                </ul>
+            </li>
+            <li class="has-children"><a href="#" onclick="sousmenu(5);">PARTENAIRES</a>
+                <ul class="sous-menu" id="sous-menu5">
+                    <li><a href="{% url 'partenaires' %}">Partenaires</a></li>
+                    <li><a href="{% url 'list_videos' %}">Vidéos Partenaires</a></li>
+                </ul>
+            </li>
+
+            <li class="has-children"><a href="#" onclick="sousmenu(4);">EDITIONS PRECEDENTES</a>
+                <ul class="sous-menu" id="sous-menu4">
+                    <li><a href="{% url 'edition_2019' %}">Vie de l'édition 2019</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+
+
+    {% block slider %}
+    {% endblock slider %}
+
+    <ul class="dropdownmenu" style="position:fixed; top: 150px;">
+        <li><a href="{% url 'index' %}">ACCUEIL</a></li>
+        <li><a href="#">EXPOSANTS</a>
+            <ul class="sous_menu">
+                <li><a href="{% url 'exposants' %}">Vous souhaitez exposer ?</a></li>
+                <li><a href="{% url 'dossier_admission' %}">Dossiers d'admission</a></li>
+                <li><a href="{% url 'espaces_exposition' %}">Espaces d'exposition</a></li>
+                <li><a href="{% url 'espaces_publicitaires' %}">Espaces publicitaires</a></li>
+                <li><a href="{% url 'liste_exposants' %}">Liste des exposants</a></li>
+                <li><a href="{% url 'contact' %}">Contact</a></li>
+            </ul>
+        </li>
+        <li><a href="#">INFOS<br>PRATIQUES</a>
+            <ul class="sous_menu">
+                <li><a href="{% url 'horaires_tarifs' %}">Horaires & Tarifs</a></li>
+                <li><a href="https://boutique.sudcharentetourisme.fr/billetterie/foire-exposition-comice-agricole-barbezieux" target="_blank">Billeterie en ligne</a></li>
+                <li><a href="{% static 'images/plans/PG-FOIRE-BASE-2022.pdf' %}" target="_blank">Plan de la Foire</a></li>
+                <li><a href="{% static 'images/plans/CG-FOIRE-2022.pdf' %}" target="_blank">Plan d'accès à la Foire</a></li>
+                <li><a href="{% url 'resto_buvettes_foire' %}">Resto et buvettes de la Foire</a></li>
+                <li><a href="{% url 'espace_gastronomie' %}">L'espace gastronomie</a></li>
+            </ul>
+        </li>
+        <li><a href="#">ANIMATIONS<br>2022</a>
+            <ul class="sous_menu">
+                <li><a style="height:60px" href="{% url 'reglement_concours' %}">Règlement concours Pineau et Eaux de vie nouvelles</a></li>
+                <li><a href="{% url 'animations_vendredi' %}">Vendredi 02/09/2022</a></li>
+                <li><a href="{% url 'animations_samedi' %}">Samedi 03/09/2022</a></li>
+                <li><a href="{% url 'animations_dimanche' %}">Dimanche 04/09/2022</a></li>
+                <li><a href="{% url 'animations_cheval' %}">Animations Cheval</a></li>
+                <li><a href="{% url 'autres_animations' %}">Autres Animations</a></li>
+            </ul>
+        </li>
+        <li><a href="#">PARTENAIRES</a>
+            <ul class="sous_menu">
+                <li><a href="{% url 'partenaires' %}">Partenaires</a></li>
+                <li><a href="{% url 'list_videos' %}">Vidéos Partenaires</a></li>
+            </ul>
+        </li>
+        <li><a href="#">EDITIONS<br>PRECEDENTES</a>
+            <ul class="sous_menu">
+                <li><a href="{% url 'edition_2019' %}">Vie de l'édition 2019</a></li>
+                <!-- <li><a href="{% url 'edition_2022' %}">Vie de l'édition 2022</a></li> -->
+            </ul>
+        </li>
+    </ul>
+
+
+
+    {% block content %}
+    {% endblock content %}
+
+    {% block plan %}
+    {% endblock plan %}
+
+    {% block pub_partenaire %}
+    {% endblock pub_partenaire %}
+
+    <footer>
+        <div class="container bas_de_page">
+            <div class="col_00"></div>
+            <div class="col_01">
+                <a href="{% url 'index' %}"><img src="{% static 'images/logo.png' %}"></a>
+                <div class="titre_bas_page">ADRESSE</div>
+                <div class="texte_bas_page">7, Rue du Capitaine Souil</div>
+                <div class="texte_bas_page">L'oisillon</div>
+                <div class="texte_bas_page">16300 BARBEZIEUX-SAINT-HILAIRE</div>
+                <div class="texte_bas_page" style="margin-top:2vh">Tél. : 05 45 78 16 34</div>
+                <div class="texte_bas_page">Mail : foire.expo-barbezieux@wanadoo.fr</div>
+            </div>
+            <div class="col_02">
+                <div class="titre_bas_page">EXPOSANTS</div>
+                <div class="texte_bas_page"><a href="{% url 'exposants' %}">Devenez Exposant</a></div>
+                <div class="texte_bas_page"><a href="{% url 'dossier_admission' %}">Dossiers d'admission</a></div>
+                <div class="texte_bas_page"><a href="{% url 'espaces_exposition' %}">Espaces d'exposition</a></div>
+                <div class="texte_bas_page"><a href="{% url 'espaces_publicitaires' %}">Espaces publicitaires</a></div>
+                <div class="texte_bas_page"><a href="{% url 'liste_exposants' %}">Liste des exposants</a></div>
+                <div class="texte_bas_page"><a href="{% url 'contact' %}">Contact</a></div>
+            </div>
+            <div class="col_03">
+                <div class="titre_bas_page">INFOS PRATIQUES</div>
+                <div class="texte_bas_page"><a href="{% url 'horaires_tarifs' %}">Horaires & Tarifs</a></div>
+                <div class="texte_bas_page"><a href="{% static 'images/plans/PG-FOIRE-BASE-2019.pdf' %}" target="_blank">Plan de la Foire</a></div>
+                <div class="texte_bas_page"><a href="{% static 'images/plans/CG-FOIRE-2022.pdf' %}" target="_blank">Plan d'accès à la Foire</a></div>
+                <!--   <div class="texte_bas_page"><a href="#">Mesures sanitaires</a></div> -->
+                <div class="texte_bas_page"><a href="{% url 'resto_buvettes_foire' %}">Restos et buvettes de la foire</a></div>
+                <div class="texte_bas_page"><a href="{% url 'espace_gastronomie' %}">Espaces gastronomie</a></div>
+            </div>
+            <div class="col_04">
+                <div class="titre_bas_page">ANIMATIONS</div>
+                <div class="texte_bas_page"><a href="{% url 'reglement_concours' %}">Règlement concours de Pineau</a></div>
+                <div class="texte_bas_page"><a href="{% url 'animations_vendredi' %}">Animations du Vendredi</a></div>
+                <div class="texte_bas_page"><a href="{% url 'animations_samedi' %}">Animations du Samedi</a></div>
+                <div class="texte_bas_page"><a href="{% url 'animations_dimanche' %}">Animations du Dimanche</a></div>
+                <div class="texte_bas_page"><a href="{% url 'animations_cheval' %}">Animations Cheval</a></div>
+                <div class="texte_bas_page"><a href="{% url 'autres_animations' %}">Autres Animations</a></div>
+
+                <div class="texte_bas_page" style="margin-top:1vh"><a href="{% url 'mentions_legales' %}">Mentions légales</a></div>
+                <div class="texte_bas_page"><a href="{% url 'cookies' %}">Déclaration sur les cookies</a></div>
+                <div>
+                    <a href="https://www.facebook.com/foireexpositionbarbezieux" target="_blank">
+                        <img src="{% static 'images/2022/facebook.png' %}" style="width:10%">
+                    </a>
+
+                    <a href="https://www.instagram.com/foireexpobarbezieux/?hl=fr" target="_blank">
+                        <img src="{% static 'images/2022/instagram.png' %}" style="width:10%">
+                    </a>
+                </div>
+                <!--  <div class="texte_bas_page"><a href="#">Règlement général des manifestations</a></div>
+                  <div class="texte_bas_page"><a href="#">Plan du site</a></div>
+                <div class="texte_bas_page"><a href="#">Paramètres des cookies</a></div>
+                <div class="titre_bas_page" style="margin-top:3vh">EDITIONS PRECEDENTES</div>  
+                <div class="titre_bas_page" style="margin-top:3vh">LAISSEZ UN COMMENTAIRE</div>  -->
+            </div>
+            <div class="col_00"></div>
+            <div class="reseaux_sociaux">
+                <a href="https://www.facebook.com/foireexpositionbarbezieux" target="_blank" style="text-align:right">
+                    <img src="{% static 'images/2022/facebook.png' %}" class="reseaux_sociaux_img">
+                </a>
+                <div style="width:10%"></div>
+                <a href="https://www.instagram.com/foireexpobarbezieux/?hl=fr" target="_blank" style="text-align:left">
+                    <img src="{% static 'images/2022/instagram.png' %}" class="reseaux_sociaux_img">
+                </a>
+            </div>
+        </div>
+
+    </footer>
+
+</body>

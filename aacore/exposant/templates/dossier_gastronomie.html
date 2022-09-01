@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block head_title %}{{ head_title }}{% endblock %}
+{% load static %}
+
+
+{% block slider %}
+
+<a href="{% url 'index' %}">
+    <img src="{% static 'images/logo.png' %}" class="logo">
+</a>
+<img src="{% static 'images/2022/exposant_entete.jpg' %}">
+
+{% endblock slider %}
+
+
+{% block content %}
+
+<div class="container" style="flex-direction:column; align-items:center">
+    <div style="max-width:950px">
+        <img src="{% static 'images/dossier_admission/dossier_admission_gastro_recto.jpg' %}">
+    </div>
+    <div style="max-width:950px">
+        <img src="{% static 'images/dossier_admission/dossier_admission_gastro_verso.jpg' %}">
+    </div>
+</div>
+
+{% endblock content %}

@@ -1,0 +1,850 @@
+@font-face {
+    font-family: 'Segoe UI';
+    src: url('./ui/segoeui.eot');
+    src: local("Segoe UI"), local("Segoe"), local("Segoe WP"), url('./ui/segoeui.eot?#iefix') format('embedded-opentype'), url('./ui/segoeui.woff') format('woff'), url('./ui/segoeui.svg#SegoeUI') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Segoe UI Semibold';
+    src: url('/semibold/seguisb.eot');
+    src: local("Segoe Semibold"), local("Segoe WP Semibold"), url('/semibold/seguisb.eot?#iefix') format('embedded-opentype'), url('/semibold/seguisb.woff') format('woff'), url('/semibold/seguisb.svg#SegoeUISemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Segoe UI Bold';
+    src: url('/bold/segoeuib.eot');
+    src: local("Segoe Bold"), local("Segoe WP Bold"), url('/bold/segoeuib.eot?#iefix') format('eot'), /* Wrong format will tell IE9+ to ignore and use WOFF instead. MSHAR-2822 */
+    url('/bold/segoeuib.woff') format('woff'), url('/bold/segoeuib.svg#SegoeUIBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Segoe UI Light';
+    src: url('/light/segoeuil.eot');
+    src: local("Segoe UI Light"), local("Segoe WP Light"), url('/light/segoeuil.eot?#iefix') format('embedded-opentype'), url('/light/segoeuil.woff') format('woff'), url('/light/segoeuil.svg#SegoeUILight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI';
+}
+
+.logo {
+    position: absolute;
+    z-index: 900;
+    width: 20%;
+    margin-top: 1vh;
+    margin-left: 1vw;
+}
+
+.content {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.content a {
+    color: #68533C;
+}
+
+.content a:hover {
+    color: #C99E61;
+}
+
+.exposant,
+.visiteur,
+.theme,
+.vedette .arnaque {
+    height: 420px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 45%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: end;
+    align-items: end;
+    padding-right: 15px;
+    padding-bottom: 15px;
+}
+
+.arnaque {
+    border: 1px solid black;
+    width: 45%;
+}
+
+.exposant {
+    background-image: url(/static/images/2022/exposant.jpg);
+}
+
+.visiteur {
+    background-image: url(/static/images/2022/visiteur.jpg);
+}
+
+.theme {
+    background-image: url(/static/images/2022/theme-cheval.jpg);
+}
+
+.vedette {
+    background-image: url(/static/images/vedette.jpg);
+}
+
+.vedettes {
+    border: 1px solid #68533C;
+}
+
+.plus_infos {
+    background-color: #C99E61;
+    color: white;
+    border: 1px solid #68533C;
+    height: 5vh;
+    width: 8vw;
+    border-radius: 5px;
+    font-size: 1vw;
+    /*   margin-left: -11vw;
+    margin-top: 36vh;
+    position: absolute;*/
+}
+
+.billeterie {
+    background-color: #C99E61;
+    color: white;
+    border: 1px solid #68533C;
+    height: 7vh;
+    width: 25vw;
+    border-radius: 5px;
+    font-size: 2vw;
+}
+
+.plus_infos:hover, .billeterie:hover {
+    background-color: #68533C;
+    box-shadow: 00px 0px 4px 4px #C99E61;
+}
+
+.text_content {
+    font-size: 24px;
+    color: #68533c;
+}
+
+.container {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    justify-content: center;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    align-content: center;
+}
+
+.article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    /* pour que mes images soit de la taille de leur bloc parents*/
+}
+
+.p {
+    margin-top: 2vh;
+}
+
+.soulgras {
+    font-weight: bold;
+    text-decoration: underline;
+    margin-top: 2vh;
+}
+
+.text_content li {
+    margin-top: 1vh;
+    margin-left: 4vw;
+}
+
+.col_menu {
+    width: 15%;
+}
+
+h1,
+.titre_page,
+.titre_pub {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2vw;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    color: #68533C;
+}
+
+.titre_page {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 2.5em;
+}
+
+.titre_pub {
+    text-decoration: underline;
+}
+
+.sous_titre {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2vw;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    color: #C99E61;
+}
+
+h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    color: #C99E61;
+}
+
+h3 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: normal;
+    color: #68533C;
+    font-size: 1.7vw;
+}
+
+h4 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: normal;
+    color: #68533C;
+    font-size: 1.4vw;
+}
+
+a {
+    color: #68533C;
+}
+
+body {
+    margin: 0;
+}
+
+footer {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+footer a {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    text-decoration: none;
+    font-weight: 100;
+    font-size: 0.7vw;
+}
+
+.bas_de_page {
+    background-color: #556773;
+    text-align: left;
+    justify-content: space-around;
+    padding-top: 1vw;
+}
+
+.titre_bas_page,
+.titre_bas_page a {
+    font-size: 1.2vw;
+    font-weight: bold;
+    text-decoration: none;
+    margin-bottom: 0.5vw;
+    color: #C99E61;
+}
+
+.titre_bas_page a:hover {
+    color: #ffdfb2;
+}
+
+.texte_bas_page,
+.texte_bas_page a {
+    font-size: 0.7vw;
+    font-weight: normal;
+    color: #C99E61;
+}
+
+.texte_bas_page a:hover {
+    color: #ffdfb2;
+}
+
+.col_00 {
+    width: 12%;
+}
+
+.col_01,
+.col_04 {
+    width: 20%;
+    margin-bottom: 3vw;
+}
+
+.col_02,
+.col_03 {
+    width: 18%;
+}
+
+#col_02 p {
+    margin-bottom: 0.2vw;
+}
+
+.pub_col01 {
+    animation: fondu_01 20s cubic-bezier(0.175, 0.885, 0.32, 1.275) infinite both;
+}
+
+.pub_col02 {
+    animation: fondu_02 40s cubic-bezier(0.175, 0.885, 0.32, 1.275) infinite both;
+}
+
+.pub_col03 {
+    animation: fondu_03 45s cubic-bezier(0.175, 0.885, 0.32, 1.275) infinite both;
+}
+
+.pub_col04 {
+    animation: fondu_04 35s cubic-bezier(0.175, 0.885, 0.32, 1.275) infinite both;
+}
+
+.pub_col05 {
+    animation: fondu_05 30s cubic-bezier(0.175, 0.885, 0.32, 1.275) infinite both;
+}
+
+.pub_col01,
+.pub_col05 {
+    width: 10%;
+    max-width: 220px;
+}
+
+.pub_col02,
+.pub_col04 {
+    width: 17%;
+    max-width: 380px;
+}
+
+.pub_col03 {
+    width: 32%;
+    max-width: 700px;
+}
+
+.pub_col01,
+.pub_col02,
+.pub_col03,
+.pub_col04,
+.pub_col05 {
+    height: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    max-height: 220px;
+    height: 14vh;
+    box-shadow: 0px 10px 10px 0px #777;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.d1:hover,
+.d2:hover {
+    animation-play-state: paused;
+}
+
+.differents_espaces {
+    width: 16%;
+    background-color: #C99E61;
+    border: 1px solid #68533C;
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    margin: 5vh 1vw 5vh 1vw;
+    padding: 0.5%;
+    padding-top: 4vh;
+    font-weight: bold;
+}
+
+.espace {
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #68533C;
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+.espace_img {
+    width: 45%;
+    margin-top: 4vh;
+}
+
+.espace_pub_bc,
+.espace_pub,
+.anim_hr,
+.anim,
+.list_exposant,
+.list_exposant_bc,
+.list_ent_bc {
+    color: #68533C;
+    border-top: 1px solid #68533C;
+    width: 12%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 0.5vw;
+}
+
+.anim_hr {
+    justify-content: center;
+}
+
+.list_ent_bc {
+    font-size: 1rem;
+}
+
+.espace_pub {
+    width: 13%;
+    font-size: 1.2em;
+    ;
+}
+
+.espace_pub_bc {
+    font-size: 1.2em;
+}
+
+.espace_pub_bc,
+.anim_hr,
+.list_exposant_bc,
+.list_ent_bc {
+    background-color: rgba(201, 158, 97, 0.5);
+}
+
+.list_exposant,
+.list_exposant_bc,
+.list_ent_bc {
+    height: auto;
+    padding: 0.5vh 0 0.5vh 1vh;
+}
+
+.list_ent_bc {
+    cursor: pointer;
+}
+
+.list_ent_bc:hover {
+    background-color: rgba(201, 158, 97, 1);
+    color: white;
+}
+
+.anim,
+.anim_hr {
+    border-right: 1px solid #68533C;
+    height: auto;
+    padding: 1vh 0 1vh 0;
+    font-size: 1.5em;
+}
+
+.anim {
+    padding: 1vh;
+}
+
+.anim  .col {
+    align-items: start;
+}
+
+.anim_hr {
+    border-left: 1px solid #68533C;
+}
+
+.haut_page {
+    width: 70%;
+    justify-content: end;
+    padding: 2vh 0 0 0;
+    font-size: 1.2em;
+}
+
+.bt {
+    border-top: 1px solid #68533C;
+}
+
+.bb {
+    border-bottom: 1px solid #68533C;
+}
+
+.bl {
+    border-left: 1px solid #68533C;
+}
+
+.br {
+    border-right: 1px solid #68533C;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.icone_menu {
+    max-width: 80px;
+}
+
+.icone_menu_txt {
+    width: 15%;
+    text-align: center;
+    font-size: 1.5em;
+    color: #68533C;
+}
+
+@keyframes fondu_01 {
+    0% {
+        background-image: url("../images/pub/col01/4b.jpg");
+    }
+    100% {
+        background-image: url("../images/pub/col05/mutuelle_poitiers.jpg");
+    }
+}
+
+@keyframes fondu_02 {
+    0% {
+        background-image: url("../images/pub/col02/charente.jpg");
+    }
+    20% {
+        background-image: url("../images/pub/col02/fornel.jpg");
+    }
+    40% {
+        background-image: url("../images/pub/col02/erdf.jpg");
+    }
+    60% {
+        background-image: url("../images/pub/col02/herriberry.jpg");
+    }
+    80% {
+        background-image: url("../images/pub/col02/mutualia.jpg");
+    }
+    100% {
+        background-image: url("../images/pub/col02/walter.jpg");
+    }
+}
+
+@keyframes fondu_03 {
+    0% {
+        background-image: url("../images/pub/col03/pixie_color.jpg");
+    }
+    8.33% {
+        background-image: url("../images/pub/col03/lebihan.jpg");
+    }
+    16.67% {
+        background-image: url("../images/pub/col03/fimeco.jpg");
+    }
+    25% {
+        background-image: url("../images/pub/col03/barbezieux.jpg");
+    }
+    33.33% {
+        background-image: url("../images/pub/col03/bricomarche.jpg");
+    }
+    41.67% {
+        background-image: url("../images/pub/col03/cerfrance.jpg");
+    }
+    50% {
+        background-image: url("../images/pub/col03/cma.jpg");
+    }
+    58.33% {
+        background-image: url("../images/pub/col03/garandeau.jpg");
+    }
+    66.67% {
+        background-image: url("../images/pub/col03/groupama.jpg");
+    }
+    75% {
+        background-image: url("../images/pub/col03/ibis.jpg");
+    }
+    83.33% {
+        background-image: url("../images/pub/col03/intermarche.jpg");
+    }
+    91.67% {
+        background-image: url("../images/pub/col03/erctp.jpg");
+    }
+    100% {
+        background-image: url("../images/pub/col03/meubles_dif.jpg");
+    }
+}
+
+@keyframes fondu_04 {
+    0% {
+        background-image: url("../images/pub/col04/montauban.jpg");
+    }
+    16.67% {
+        background-image: url("../images/pub/col04/ca.jpg");
+    }
+    33.33% {
+        background-image: url("../images/pub/col04/cognac.jpg");
+    }
+    50% {
+        background-image: url("../images/pub/col04/charente_libre.jpg");
+    }
+    66.67% {
+        background-image: url("../images/pub/col04/relais.jpg");
+    }
+    83.33% {
+        background-image: url("../images/pub/col04/saur.jpg");
+    }
+    100% {
+        background-image: url("../images/pub/col04/scotpa.jpg");
+    }
+}
+
+@keyframes fondu_05 {
+    0% {
+        background-image: url("../images/pub/col05/courraud.jpg");
+    }
+    100% {
+        background-image: url("../images/pub/col05/msa.jpg");
+    }
+}
+
+#exposant,
+#visiteur,
+#theme,
+#dossier_gastronomie,
+#dossier_autres,
+#camion_exposition,
+#stand,
+#air_libre,
+#module_3x3,
+#chapiteau {
+    cursor: pointer;
+}
+
+.accueil_vedette {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    justify-content: center;
+}
+
+.expo_visit {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 80%;
+}
+
+.container70 {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 70%;
+    justify-content: center;
+}
+
+.pub_col {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    margin-bottom: 3vh;
+    justify-content: space-around;
+}
+
+.cont_pub_col {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    width: 85%;
+}
+
+.col70 {
+    width: 70%;
+}
+
+.col33 {
+    width: 33%;
+}
+
+.titre_anim {
+    font-size: 2vw;
+    font-weight: bold;
+}
+
+.titre_tel,
+.titre_tel_small {
+    display: none;
+}
+
+.titre_ordi {
+    display: flex;
+}
+
+.edition_row70,
+.pub_row70 {
+    justify-content: space-around;
+    width: 70%;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.edition_img {
+    width: 40%;
+}
+
+.text_anim {
+    font-size: 1em;
+}
+
+.w8 {
+    width: 8%;
+}
+
+.w10 {
+    width: 10%;
+}
+
+.w14 {
+    width: 14%;
+}
+
+.w15 {
+    width: 15%;
+    text-align: center;
+}
+
+.w25 {
+    width: 25%
+}
+
+.w28 {
+    width: 28%;
+}
+
+.w30 {
+    width: 30%;
+}
+
+.w40 {
+    width: 40%;
+}
+
+.w75 {
+    width: 75%;
+}
+
+.reseaux_sociaux {
+    display: none;
+}
+
+.reseaux_sociaux_img {
+    width: 10%;
+}
+
+.foire_video {
+    width: 600;
+}
+
+.control-group {
+    margin-top: 2vh;
+}
+
+.textinput {
+    font-size: 1em;
+    height: 4vh;
+    padding: 0.5vh;
+}
+
+.form_valid {
+    height: 4vh;
+    padding: 0.5vh;
+    font-size: 1em;
+    width: 20%;
+}
+
+.cont_button {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    justify-content: space-around;
+    margin: 2vh 0 2vh 0;
+}
+
+.form_valid a {
+    text-decoration: none;
+    color: black;
+}
+
+.titre-page-ml {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    color: #C99E61;
+    font-size: 3em;
+    text-align: center;
+}
+
+.titre-ml {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color: #68533C;
+    font-size: 1.3em;
+    margin-top: 1em;
+}
+
+.text-ml {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: normal;
+    color: #68533C;
+    font-size: 1.3em;
+}
+
+.form_background {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    z-index: 100;
+    display: none;
+}
+
+.form_content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 5px solid #68533C;
+}
+
+.form_title {
+    background-color: #C99E61;
+    color: white;
+}
+
+.close_button {
+    background-color: red;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding: 0.3em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.container_video {
+    display: flex; 
+    flex-wrap: wrap; 
+    width: 70%;
+}
+
+.box_video {
+    max-width:450px; 
+    display:flex; 
+    padding:0.8em; 
+    flex-wrap: wrap; 
+    justify-content:center;
+}
+
+.menus {
+    width: 700px;
+}

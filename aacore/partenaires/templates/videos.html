@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% block head_title %}{{ head_title }}{% endblock %}
+{% load static %}
+
+
+{% block slider %}
+
+<a href="{% url 'index' %}">
+    <img src="{% static 'images/logo.png' %}" class="logo">
+</a>
+<img src="{% static 'images/2022/videos_partenaires_entete.jpg' %}">
+
+{% endblock slider %}
+
+
+{% block content %}
+
+
+<div class="article">
+    <div class="container_video">
+
+        {% for video in list_video %}
+        
+        <div class="box_video">
+            <video width=100% controls poster="{{ video.img_url }}" style="border:1px solid grey;">
+                <source src="{{ video.video_url }}" type="video/mp4">
+            </video>
+            <div style="padding:0.5em; font-weight:bold;">
+             {{ video.titre }}
+            </div>
+        </div>
+       
+
+        {% endfor %}
+    </div>
+</div>
+
+{% endblock content %}
+
+
+<div class="titre_tel" style="margin-top:3vh">
+    <video width=350 controls poster="{{ file350 }}">
+        <source src="{{ video_pub }}" type="video/mp4">
+    </video>
+</div>

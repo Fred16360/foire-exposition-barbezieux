@@ -1,0 +1,92 @@
+@media (min-width: 1601px) and (max-width:1920px) {
+    .dp-479max {
+        display: none;
+    }
+    .dp-480-959 {
+        display: none;
+    }
+    .dp-960-1280 {
+        display: none;
+    }
+    .dp-1281-1600 {
+        display: none;
+    }
+    .dp-1601-1920 {
+        display: flex;
+    }
+    .dp-1921-2560 {
+        display: flex;
+    }
+    .logo {
+        width: 20%;
+    }
+    .col_menu {
+        width: 20%;
+    }
+    .titre {
+        font-size: 1.3vw;
+    }
+    .fleche_center img {
+        width: 100px;
+        height: 75px;
+        margin-top: 0px;
+    }
+    .contact {
+        font-size: 1.8vw;
+    }
+    #slider {
+        max-height: 42vw;
+    }
+    #techniques figure figcaption,
+    #realisation figure figcaption {
+        bottom: 3.8vw;
+        font-size: 2vw;
+    }
+    #techniques figure img,
+    #actualites figure img,
+    #realisations figure img {
+        max-width: 400px;
+    }
+    #actualites figure figcaption,
+    #realisations figure figcaption {
+        max-width: 400px;
+    }
+    .actu {
+        max-width: 400px;
+        margin-left: 1vw;
+        margin-right: 1vw;
+    }
+    .col_01 img {
+        width: 70%;
+    }
+    .texte_bas_page,
+    .texte_bas_page a {
+        font-size: 1vw;
+        font-weight: normal;
+    }
+    .pub_col01,
+    .pub_col05 {
+        width: 8%;
+    }
+    .pub_col02,
+    .pub_col04 {
+        width: 14%;
+    }
+    .pub_col03 {
+        width: 26%;
+    }
+    h1,
+    h2 {
+        font-size: 36px;
+    }
+    h3 {
+        font-size: 33px;
+    }
+    .content {
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+    }
+    .menus {
+        width: 700px;
+    }
+}

@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+{% block head_title %}{{ head_title }}{% endblock %}
+{% load static %}
+
+
+{% block slider %}
+
+<a href="{% url 'index' %}">
+    <img src="{% static 'images/logo.png' %}" class="logo">
+</a>
+<img src="{% static 'images/2022/animations_entete.jpg' %}">
+
+{% endblock slider %}
+
+
+{% block content %}
+
+<div class="container" style="flex-wrap:wrap; margin-bottom:5vh">
+    <div class="container" style="margin-top:5vh; margin-bottom: 5vh">
+        <div class="titre_ordi">
+            <h1>- - - - - - - - - - - - - - - - - - - - - - - - &nbsp;AUTRES ANIMATIONS&nbsp; - - - - - - - - - - -
+                - - - - - - - - - - - - -</h1>
+        </div>
+        <div class="titre_tel_small">- - - &nbsp;AUTRES ANIMATIONS&nbsp; - - -</div>
+    </div>
+    <!--  <div class="container70 text_anim">Dans ce tableau figure seulement les animations validées par le comité de la foire exposition. Il sera complété au fur et à mesure des nouvelles validations.</div>-->
+    <div class="container70 bold">
+        <div class="anim col" style="width:100%; border:1px solid black; padding:0px;">
+            <div class="anim_hr" style="border:0px solid black; width:100%">ANIMATIONS</div>
+            <div style="margin-top:2vh; margin-bottom:2vh">Jeu visiteurs</div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container" style="flex-wrap:wrap; margin-bottom:5vh">
+    <div class="container" style="margin-top:5vh; margin-bottom: 5vh">
+        <div class="titre_ordi">
+            <h1>- - - - - - - - - - - - - - - - - - - - - - - - &nbsp;FIL ROUGE (3 jours)&nbsp; - - - - - - - - - - -
+                - - - - - - - - - - - - -</h1>
+        </div>
+        <div class="titre_tel_small">- - - &nbsp;FIL ROUGE (3 jours)&nbsp; - - -</div>
+    </div>
+    <!--  <div class="container70 text_anim">Dans ce tableau figure seulement les animations validées par le comité de la foire exposition. Il sera complété au fur et à mesure des nouvelles validations.</div>-->
+    <div class="container70 bold">
+        <div class="anim col" style="width:100%; border:1px solid black">
+            <div style="margin-top:2vh">Baptêmes Poneys : Centre équestre Barbezieux</div>
+            <div>De 10h à 12h et de 15h à 17h</div>
+            <div style="margin-top:4vh">Maréchalerie : Centre de formation</div>
+            <div style="margin-top:4vh">Jeu visiteurs : CHEVAL</div>
+            <div>1er Prix : partenariat GAMM VERT</div>
+            <div style="margin-top:4vh">Races asines : CORPS ET ANES</div>
+            <div style="margin-top: 4vh;">Voltige</div>
+            <div style="margin-top: 4vh;">Dressage haute école</div>
+            <div style="margin-top:4vh;">Démonstration travaux agricoles - chevaux de trait</div>
+            <div style="margin-bottom: 2vh;">(les traites de Jean Vérat)</div>
+        </div>
+    </div>
+</div>
+
+
+
+{% endblock content %}

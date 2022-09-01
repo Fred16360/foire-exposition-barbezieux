@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block head_title %}{{ head_title }}{% endblock %}
+{% load static %}
+
+{% block slider %}
+
+<a href="{% url 'index' %}">
+  <img src="{% static 'images/logo.png' %}" class="logo">
+</a>
+<img src="{% static 'images/2022/general_entete.jpg' %}">
+
+{% endblock slider %}
+
+
+{% block content %}
+
+<div class="container">
+    <div class="col70">
+
+        <script id="CookieDeclaration" src="https://consent.cookiebot.com/93f19659-477c-4c10-ad06-17d612807425/cd.js" type="text/javascript" async></script>
+
+    </div>
+</div>
+
+{% endblock content %}

@@ -1,0 +1,38 @@
+<!-- templates/contact.html -->
+{% extends 'base.html' %}
+{% block head_title %}{{ head_title }}{% endblock %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% block slider %}
+
+<a href="{% url 'index' %}">
+  <img src="{% static 'images/logo.png' %}" class="logo">
+</a>
+<img src="{% static 'images/2022/contact_entete.jpg' %}">
+
+{% endblock slider %}
+
+
+{% block content %}
+
+<div class="container">
+  <div class="col33">
+    <h2>Demande d'informations</h2>
+
+    <form method="post" enctype="multipart/form-data">
+      {% csrf_token %}
+
+      {{ form|crispy }}
+
+      <div class="cont_button">
+       
+       <input type="submit"  class="form_valid" value="Envoyer">
+       
+        <button class="form_valid"><a href="{% url 'index' %}">Annuler</a></button>
+      </div>
+    </form>
+  </div>
+</div>
+
+{% endblock content %}

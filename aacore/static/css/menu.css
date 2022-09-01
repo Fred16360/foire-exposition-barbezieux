@@ -1,0 +1,179 @@
+.menu_burger {
+    width: 25px;
+    height: 4px;
+    background-color: #556773;
+    margin: 2px 10px;
+}
+
+
+/* MENU DROITE */
+
+.dropdownmenu,
+.dropdownmenu ul {
+    /* Pour les sous-menus */
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.dropdownmenu ul {
+    display: none;
+}
+
+.dropdownmenu li {
+    position: relative;
+    width: 170px;
+}
+
+.dropdownmenu a {
+    display: flex;
+    list-style: none;
+    padding: 0px;
+    background-color: #C99E61;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.sous_menu a {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 40px;
+    width: 300px;
+    padding-left: 15px;
+}
+
+.dropdownmenu li:hover ul {
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 170px;
+    z-index: 100;
+}
+
+
+/* Gestion des couleurs */
+
+.dropdownmenu li a {
+    color: white;
+    /* Couleur du texte du menu */
+    text-decoration: none;
+}
+
+.dropdownmenu li a:hover {
+    background-color: #556773;
+    /*   Couleur d'arriere-plan du menu au survol */
+}
+
+.dropdownmenu li:hover a {
+    color: #fff;
+    /* Couleur du texte du menu au survol */
+}
+
+.dropdownmenu ul li a {
+    color: #666;
+    /* Couleur du texte des sous-menu */
+}
+
+.dropdownmenu ul li:hover a {
+    color: white;
+    background-color: #556773;
+    /* Couleur du texte des sous-menu au survol */
+}
+
+.nav ul {
+    margin: 0px;
+    padding: 0px;
+    background: #C99E61;
+    list-style: none;
+    color: white;
+}
+
+.nav a {
+    padding: 1em;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    border-top: 1px solid #556773;
+}
+
+.nav .menu {
+    display: flex;
+    /*1*/
+    flex-direction: row;
+    /*2*/
+    justify-content: center;
+    /*3*/
+    flex-flow: column wrap;
+    /*4*/
+}
+
+.has-children {
+    /*1*/
+    position: relative;
+}
+
+.has-children:hover>.sous-menu {
+    /*2*/
+    display: flex;
+}
+
+.sous-menu {
+    /*3*/
+    display: none;
+    flex-flow: column wrap;
+    min-width: 100px;
+    position: static;
+    background: dodgerblue;
+}
+
+.sous-menu a {
+    /*4*/
+    text-align: center;
+    color: white;
+    background-color: #556773;
+    border-top: 1px solid #C99E61;
+}
+
+.sous-menu .sous-menu {
+    /*5*/
+    top: 0px;
+    left: 100%;
+    background: #1e76d6;
+}
+
+.sous-menu {
+    display: none;
+    flex-flow: column wrap;
+    min-width: 100px;
+    position: absolute;
+    background: dodgerblue;
+    position: static;
+}
+
+.is-active {
+    display: flex!important;
+}
+
+.sous-menu a {
+    /*4*/
+    text-align: left;
+    text-align: center;
+    color: white;
+}
+
+.sous-menu {
+    top: 0px;
+    left: 100%;
+    background: #1e76d6;
+}
+
+.menu_off {
+    display:none;
+}

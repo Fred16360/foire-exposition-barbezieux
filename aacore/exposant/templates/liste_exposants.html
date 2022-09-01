@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+{% block head_title %}{{ head_title }}{% endblock %}
+{% load static %}
+
+
+{% block slider %}
+
+<a href="{% url 'index' %}">
+    <img src="{% static 'images/logo.png' %}" class="logo">
+</a>
+<img src="{% static 'images/2022/exposant_entete.jpg' %}">
+
+{% endblock slider %}
+
+
+{% block content %}
+
+<div class="container" style="flex-wrap:wrap; margin-bottom:5vh">
+    <div id="haut" class="container" style="margin-bottom: 5vh">
+        <div class="titre_ordi">
+        <h1>- - - - - - - - - - - - - - - - - - - - - - &nbsp;LISTE DES EXPOSANTS 2022&nbsp; - - - - - - - - -
+            - - - - - - - - - - - - -</h1>
+        </div>
+    </div>
+    <div class="titre_tel_small">- - - &nbsp;LISTE DES EXPOSANTS 2022&nbsp; - - -</div>
+
+    <div class="container">
+        <div class="pub_row70 bb" style="margin-bottom: 5vh">
+            <div class="list_ent_bc bl w15" onclick="location.href='#banque';">Administration Banques Commerces Divers</div>
+            <div class="list_ent_bc bl w15" onclick="location.href='#automobile';">Automobile</div>
+            <div class="list_ent_bc bl w10" onclick="location.href='#comice';">Cheval</div>
+            <div class="list_ent_bc bl w10" onclick="location.href='#gastronomie';">Gastronomie</div>
+            <div class="list_ent_bc bl w10" onclick="location.href='#habitat';">Habitat</div>
+            <div class="list_ent_bc bl w15" onclick="location.href='#materiel';">Matériel Agricole</div>
+            <div class="list_ent_bc bl w15" onclick="location.href='#meuble';">Meubles Informatique</div>
+            <div class="list_ent_bc bl br w10" onclick="location.href='#jumelage';">Jumelage</div>
+        </div>
+    </div>
+
+    {% for categorie in list_categories %}
+    <div class="container" style="text-align:center" id="{{ categorie.nom_id }}">
+        <h2>{{ categorie.nom_categorie }}</h2>
+    </div>
+
+    <div class="container" style="flex-wrap:wrap">
+        {% for exposant in list_exposants %}
+
+        {% if categorie.numero == exposant.categorie.numero %}
+        <div class="pub_row70">
+            <div class="list_exposant_bc bl bold w28">{{ exposant.nom_exposant }}</div>
+            <div class="list_exposant bl w28">{{ exposant.adresse }}</div>
+            <div class="list_exposant_bc bl bold w8">{{ exposant.code_postal }}</div>
+            <div class="list_exposant_bc bl bold w25">{{ exposant.ville }}</div>
+            <div class="list_exposant bl br w14">{{ exposant.num_tel }}</div>
+        </div>
+        {% endif %}
+        {% endfor %}
+    </div>
+    <div class="container">
+        <div class="container70 bt haut_page" style="justify-content:flex-end"><a href="#haut">Haut de page ↑</a></div>
+    </div>
+    {% endfor %}
+
+
+
+</div>
+
+{% endblock content %}

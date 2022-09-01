@@ -1,0 +1,217 @@
+@media(min-width:480px) and (max-width:959px) {
+    .dp-479max {
+        display: none;
+    }
+    .dp-480-959 {
+        display: flex;
+    }
+    .dp-1281-1600 {
+        display: none;
+    }
+    .dp-1601-1920 {
+        display: none;
+    }
+    .dp-1921-2560 {
+        display: none;
+    }
+    .col_menu {
+        display: none;
+    }
+    .logo {
+        width: 40%;
+    }
+    .titre {
+        display: none;
+    }
+    .fleche_center img {
+        width: 53px;
+        height: 40px;
+        margin-top: 2px;
+    }
+    .questions {
+        font-size: 3.5vw;
+    }
+    .bouton_gris {
+        font-size: 4.3vw;
+        height: 6.5vw;
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 1vw;
+        margin-top: 1vw;
+    }
+    .bouton_vert {
+        font-size: 3vw;
+        height: 5.5vw;
+        width: 35%;
+        border-radius: 13vw;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    #realisations .bouton_gris {
+        margin-bottom: 5px;
+    }
+    .contact {
+        font-size: 2.2vw;
+    }
+    #techniques figure figcaption,
+    #realisation figure figcaption {
+        bottom: 8vw;
+        font-size: 2.8vw;
+        padding: 2vw;
+    }
+    #techniques figure {
+        margin-bottom: -6vw;
+    }
+    #realisations figure figcaption,
+    #actualites figure figcaption {
+        font-size: 2vw;
+        max-width: 400px;
+    }
+    .date {
+        font-family: century gothic;
+        margin-left: 1vw;
+        margin-top: 0.5vw;
+        font-size: 1.5vw;
+        font-weight: normal;
+    }
+    .titre_actualites {
+        font-size: 3.5vw;
+    }
+    .col_01 img {
+        width: 70%;
+    }
+    .col_01,
+    .col_02,
+    .col_03,
+    .col_04 {
+        width: 25%;
+        margin-bottom: 3vw;
+    }
+    .texte_bas_page,
+    .texte_bas_page a {
+        font-size: 1.2vw;
+        font-weight: normal;
+    }
+    .exposant, .visiteur, .theme {
+        height: 200px;
+        width: 48%;
+    }
+    h3 {
+        font-size: 2.7vw;
+    }
+    .differents_espaces {
+        font-size: 1.2rem;
+    }
+    .espace {
+        font-size: 0.8rem;
+    }
+    .list_ent_bc, .list_exposant_bc, .list_exposant {
+        font-size: 0.7rem;;
+    }
+    .container70 {
+        width: 90%;
+    }
+    .icone_menu_txt {
+        font-size: 1em;
+    }
+    .p {
+        font-size: 0.5em;
+    }
+    .soulgras {
+        font-size: 0.5em;
+    }
+    .col70 {
+        width: 90%;
+    }
+    .titre_anim {
+        font-size: 4vw;
+    }
+    .anim, .anim_hr {
+        font-size: 0.8em;
+    }
+    .pub_row70 {
+        width: 90%;
+    }
+    .espace_pub_bc {
+        font-size: 0.5em;
+    }
+    .espace_pub {
+        font-size: 0.4em;
+    }
+    .titre_tel, .titre_tel_small {
+        display:flex;
+        font-size: 1.3em;
+        color: #68533C;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        justify-content: center;
+        font-weight: bold;
+    }
+    .titre_tel_small {
+        font-size: 0.8em;
+    }
+    .titre_ordi {
+        display: none;
+    }
+    .menus {
+        width: 500px;
+    }
+}
+
+@media(min-width:480px) and (max-width:599px) {
+    #techniques figure img,
+    #actualites figure img,
+    #realisations figure img {
+        max-width: 220px;
+    }
+    #realisations figure figcaption,
+    #actualites figure figcaption {
+        max-width: 220px;
+    }
+}
+
+@media(min-width:600px) and (max-width:719px) {
+    #techniques figure img,
+    #actualites figure img,
+    #realisations figure img {
+        max-width: 280px;
+    }
+    #realisations figure figcaption,
+    #actualites figure figcaption {
+        max-width: 280px;
+    }
+}
+
+@media(min-width:720px) and (max-width:839px) {
+    #techniques figure img,
+    #actualites figure img,
+    #realisations figure img {
+        max-width: 340px;
+    }
+    #realisations figure figcaption,
+    #actualites figure figcaption {
+        max-width: 340px;
+    }
+}
+
+@media(min-width:840px) and (max-width:959px) {
+    #techniques figure img,
+    #actualites figure img,
+    #realisations figure img {
+        max-width: 400px;
+    }
+    #realisations figure figcaption,
+    #actualites figure figcaption {
+        max-width: 400px;
+    }
+}
+
+@media(max-width:959px) {
+    .dropdownmenu, .dropdownmenu ul {
+        display:none;
+    }
+    #slider, .logo {
+        display: none;
+    }
+
+}

@@ -1,0 +1,102 @@
+@media(min-width: 1921px) {
+    .dp-479max {
+        display: none;
+    }
+    .dp-480-959 {
+        display: none;
+    }
+    .dp-960-1280 {
+        display: none;
+    }
+    .dp-1281-1600 {
+        display: none;
+    }
+    .dp-1601-1920 {
+        display: flex;
+    }
+    .dp-1921-2560 {
+        display: flex;
+    }
+    .logo {
+        width: 20%;
+    }
+    .col_menu {
+        width: 20%;
+    }
+    .titre {
+        font-size: 1.3vw;
+    }
+    #slider {
+        position: relative;
+        max-width: 100%;
+        overflow: hidden;
+        height: 1067px;
+    }
+    .fleche_center img {
+        width: 120px;
+        height: 90px;
+        margin-top: 0px;
+    }
+    .contact {
+        font-size: 1.8vw;
+    }
+    #techniques figure figcaption,
+    #realisation figure caption {
+        bottom: 3.1vw;
+        font-size: 1.5vw;
+    }
+    #techniques figure img,
+    #actualites figure img,
+    #realisation figure img {
+        max-width: 600px;
+    }
+    .titre_actualites {
+        font-size: 1.5vw;
+        margin-top: 1.2vw;
+    }
+    #actualites figure figcaption,
+    #realisations figure figcaption {
+        font-size: 1vw;
+    }
+    .actu {
+        max-width: 600px;
+        margin-left: 1vw;
+        margin-right: 1vw;
+    }
+    .date {
+        font-family: century gothic;
+        margin-left: 1vw;
+        margin-top: 0.5vw;
+        font-size: 0.8vw;
+        font-weight: normal;
+    }
+    .bouton_gris {
+        font-size: 1vw;
+        height: 2.2vw;
+        width: 15vw;
+        background-color: #E1DEDE;
+        color: #717171;
+        border-radius: 1vw;
+        border: 1px solid #707070;
+        margin-top: 1vw;
+    }
+    .col_01 img {
+        width: 70%;
+    }
+    .titre_bas_page,
+    .titre_bas_page a {
+        font-size: 1vw;
+    }
+    .texte_bas_page,
+    .texte_bas_page a {
+        font-size: 1vw;
+        font-weight: normal;
+        line-height: 30px;
+    }
+    .confiance {
+        width: 100%;
+    }
+    .menus {
+        width: 700px;
+    }
+}

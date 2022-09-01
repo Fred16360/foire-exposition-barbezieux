@@ -1,0 +1,95 @@
+{% extends 'base.html' %}
+{% block head_title %}{{ head_title }}{% endblock %}
+{% load static %}
+
+
+{% block slider %}
+
+<a href="{% url 'index' %}">
+    <img src="{% static 'images/logo.png' %}" class="logo">
+</a>
+<img src="{% static 'images/2022/exposant_entete.jpg' %}">
+
+{% endblock slider %}
+
+
+{% block content %}
+
+<div class="container text_content" style="flex-wrap:wrap; margin-top:5vh">
+    <div class="container" style="margin-bottom: 5vh">
+        <h1 style="text-align:center">La foire Exposition de Barbezieux c'est plus de 270 exposants, 29 000 visiteurs,
+            <br>40 animations, 3 grandes vedettes de la chanson,
+            <br>3 jours de manifestation sur 3 hectares.</h1>
+    </div>
+
+
+    <div class="container text_content" style="flex-wrap:wrap; margin-top:5vh">
+        <div class="container">
+            <div class="titre_ordi">
+                <h1>- - - - - - - - - - - - - - - - - - - - - - - &nbsp;DOSSIERS D'ADMISSION&nbsp; - - - - - - - - - - -
+                    -
+                    - - - - - - - - - - -</h1>
+            </div>
+            <div class="titre_tel_small">- - - &nbsp;DOSSIERS D'ADMISSION&nbsp; - - -</div>
+        </div>
+        <div class="col" style="margin-top: 3vh; margin-bottom:4vh;">
+            <div class="p" style="font-weight:bold">Les dossiers d'admission ne sont pas téléchargeables.</div>
+            <div class="p" style="margin-top:3vh">Vous devez faire le demande pour recevoir votre dossier :</div>
+            <ul>
+                <li class="p">par téléphone au <span style="font-weight:bold">05 45 78 16 34</span></li>
+                <li class="p">par mail : <span style="font-weight:bold">foire.expo-barbezieux@wanadoo.fr</span></li>
+                <li class="p">par la rubrique <a href="{% url 'contact' %}" style="font-weight:bold">"Contact"</a> de notre site internet</li>
+            </ul>
+            <h1 style="text-align:center; margin-top:4vh; margin-bottom:2vh">Dossiers d'admission 2022 (spécimen)</h1>
+            <div class="container">
+                <img src="{% static 'images/dossier_admission/dossier-gastronomie.png' %}" id="dossier_gastronomie" style="width:17%">
+                <img src="{% static 'images/dossier_admission/dossier-autres.png' %}" id="dossier_autres" style="width:17%; margin-left:10%">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="titre_ordi">
+            <h1>- - - - - - - - - - - - - - - - - - - - - - - - &nbsp;ESPACE D'EXPOSITION&nbsp; - - - - - - - - - - - -
+                - - - - - - - - - - - -</h1>
+        </div>
+        <div class="titre_tel_small">- - - &nbsp;ESPACE D'EXPOSITION&nbsp; - - -</div>
+    </div>
+
+    <div class="container" style="flex-wrap:wrap; margin-top: 5vh; margin-bottom: 5vh">
+        <div class="container">
+            <div style="width:16%" class="espace" id="air_libre">
+                <img src="{% static 'images/2022/air_libre.png' %}">
+                <span class="espace">Aire libre</span>
+            </div>
+        </div>
+
+        <div class="container">
+            <div style="width:16%" class="espace" id="camion_exposition">
+                <img src="{% static 'images/2022/camion_exposition.png' %}">
+                <span>Camion exposition</span>
+            </div>
+            <div class="differents_espaces">
+                <span>Les<br>Espaces</span>
+            </div>
+            <div style="width:16%" class="espace" id="stand">
+                <img src="{% static 'images/2022/stand.png' %}">
+                <span>Stand</span>
+            </div>
+        </div>
+
+        <div class="container" style="margin-top: 1vh">
+            <div style="width:16%; margin-right:1vw" class="espace" id="module_3x3">
+                <img src="{% static 'images/2022/module_3x3.png' %}">
+                <span>Chapiteau Modules 3x3</span>
+            </div>
+            <div style="width:16%; margin-left:1vw" class="espace" id="chapiteau">
+                <img src="{% static 'images/2022/chapiteau.png' %}">
+                <span>Îlot chapiteau</span>
+            </div>
+        </div>
+
+    </div>
+</div>
+    {% endblock content %}
